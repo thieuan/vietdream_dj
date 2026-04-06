@@ -87,6 +87,27 @@ document.addEventListener('DOMContentLoaded', () => {
             currentIndex = (currentIndex - 1 + prodItems.length) % prodItems.length;
             updateCarousel();
         });
+
+        // Touch swipe for mobile
+        const prodCarousel = document.getElementById('product-carousel');
+        if (prodCarousel) {
+            let prodTouchStartX = 0;
+            prodCarousel.addEventListener('touchstart', (e) => {
+                prodTouchStartX = e.touches[0].clientX;
+            }, { passive: true });
+
+            prodCarousel.addEventListener('touchend', (e) => {
+                const diff = prodTouchStartX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) {
+                        currentIndex = (currentIndex + 1) % prodItems.length; // swipe left → next
+                    } else {
+                        currentIndex = (currentIndex - 1 + prodItems.length) % prodItems.length; // swipe right → prev
+                    }
+                    updateCarousel();
+                }
+            }, { passive: true });
+        }
     }
 
     // ============ HERO HORIZONTAL SLIDER ============

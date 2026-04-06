@@ -1144,31 +1144,47 @@ img {
         width: 90%;
     }
 
+    /* Mobile: peek layout – item giữa 75%, hai bên lộ ra để gợi ý swipe */
     .product-carousel {
-        height: auto;
+        height: 260px;
         display: block;
-        overflow: auto;
+        overflow: visible;
+        position: relative;
+    }
+
+    .product-carousel-wrapper {
+        overflow: hidden; /* clip hai bên ngoài viewport */
+        padding: 0;
     }
 
     .prod-item {
-        position: relative;
-        width: 100%;
-        height: auto;
+        position: absolute;
+        width: 75%;
+        height: 240px;
         transform: none;
-        opacity: 1;
-        margin-bottom: 20px;
+        opacity: 0.4;
+        margin-bottom: 0;
+        transition: all 0.4s ease;
     }
 
     .prod-item.active {
-        width: 100%;
-        height: auto;
-        transform: none;
-        left: 0;
+        width: 75%;
+        height: 240px;
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
     }
 
-    .prod-item.prev,
+    .prod-item.prev {
+        left: 0;
+        transform: translateX(-55%) scale(0.88);
+        opacity: 0.5;
+    }
+
     .prod-item.next {
-        display: none;
+        right: 0;
+        transform: translateX(55%) scale(0.88);
+        opacity: 0.5;
     }
 
     .carousel-nav {

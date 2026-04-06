@@ -110,6 +110,77 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // ============ PROJECT INFO BOX SLIDER ============
+    const projDots = document.querySelectorAll('.project-dots .dot');
+    const projBgImg = document.getElementById('projectBgImg');
+    const projTitle = document.getElementById('projectTitle');
+    const projScale = document.getElementById('projectScale');
+    const projDesc = document.getElementById('projectDesc');
+
+    if (projDots.length && projBgImg) {
+        let currentProj = 0;
+
+        const goToProject = (index) => {
+            const dot = projDots[index];
+            if (!dot) return;
+
+            // Fade out
+            projBgImg.style.opacity = '0';
+            projTitle.style.opacity = '0';
+            projScale.style.opacity = '0';
+            projDesc.style.opacity = '0';
+
+            setTimeout(() => {
+                // Swap content
+                projBgImg.src = dot.dataset.img;
+                projBgImg.alt = dot.dataset.title;
+                projTitle.textContent = dot.dataset.title;
+                projScale.innerHTML = '<strong>Quy mô:</strong> ' + dot.dataset.scale;
+                projDesc.innerHTML = '<strong>Hạng mục PCCC:</strong> ' + dot.dataset.desc;
+
+                // Update active dot
+                projDots.forEach(d => d.classList.remove('active'));
+                dot.classList.add('active');
+                currentProj = index;
+
+                // Fade in
+                projBgImg.style.opacity = '1';
+                projTitle.style.opacity = '1';
+                projScale.style.opacity = '1';
+                projDesc.style.opacity = '1';
+            }, 300);
+        };
+
+        // CSS transition for fade
+        [projBgImg, projTitle, projScale, projDesc].forEach(el => {
+            el.style.transition = 'opacity 0.3s ease';
+        });
+
+        // Dot click
+        projDots.forEach((dot, i) => {
+            dot.style.cursor = 'pointer';
+            dot.addEventListener('click', () => goToProject(i));
+        });
+
+        // Swipe on the section
+        const projSection = document.getElementById('projectFeatured');
+        if (projSection) {
+            let projTouchStartX = 0;
+            projSection.addEventListener('touchstart', (e) => {
+                projTouchStartX = e.touches[0].clientX;
+            }, { passive: true });
+            projSection.addEventListener('touchend', (e) => {
+                const diff = projTouchStartX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 50) {
+                    const next = diff > 0
+                        ? (currentProj + 1) % projDots.length
+                        : (currentProj - 1 + projDots.length) % projDots.length;
+                    goToProject(next);
+                }
+            }, { passive: true });
+        }
+    }
+
     // ============ HERO HORIZONTAL SLIDER ============
     const heroTrack = document.getElementById('heroTrack');
     const heroSlides = document.querySelectorAll('.hero-slide');

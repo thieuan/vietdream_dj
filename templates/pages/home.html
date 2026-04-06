@@ -18,8 +18,10 @@
                 <div class="hero-slide-text">
                     <span class="hero-label">Tòa Nhà Thương Mại</span>
                     <h1>Giải Pháp PCCC<br><span>Công Trình Cao Tầng</span></h1>
-                    <p>Thiết kế & thi công hệ thống phòng cháy chữa cháy đồng bộ cho các tổ hợp thương mại, văn phòng từ 10 đến 50 tầng.</p>
-                    <a href="{% url 'projects' %}" class="hero-btn">XEM DỰ ÁN <i class="fa-solid fa-arrow-right"></i></a>
+                    <p>Thiết kế & thi công hệ thống phòng cháy chữa cháy đồng bộ cho các tổ hợp thương mại, văn phòng từ
+                        10 đến 50 tầng.</p>
+                    <a href="{% url 'projects' %}" class="hero-btn">XEM DỰ ÁN <i
+                            class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -34,8 +36,10 @@
                 <div class="hero-slide-text">
                     <span class="hero-label">Chung Cư & Nhà Ở</span>
                     <h1>An Toàn Cháy Nổ<br><span>Cho Mọi Căn Hộ</span></h1>
-                    <p>Hệ thống báo cháy tự động, đầu phun sprinkler và lối thoát hiểm được lắp đặt chuẩn TCVN cho khu nhà ở xã hội.</p>
-                    <a href="{% url 'services' %}" class="hero-btn">DỊCH VỤ PCCC <i class="fa-solid fa-arrow-right"></i></a>
+                    <p>Hệ thống báo cháy tự động, đầu phun sprinkler và lối thoát hiểm được lắp đặt chuẩn TCVN cho khu
+                        nhà ở xã hội.</p>
+                    <a href="{% url 'services' %}" class="hero-btn">DỊCH VỤ PCCC <i
+                            class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -50,8 +54,10 @@
                 <div class="hero-slide-text">
                     <span class="hero-label">Khu Đô Thị Phức Hợp</span>
                     <h1>Bảo Vệ Toàn Diện<br><span>Từng Công Trình</span></h1>
-                    <p>Tư vấn, thiết kế và lắp đặt hệ thống PCCC tổng thể cho các khu đô thị, khu dân cư phức hợp theo tiêu chuẩn quốc tế.</p>
-                    <a href="{% url 'contact' %}" class="hero-btn">LIÊN HỆ NGAY <i class="fa-solid fa-arrow-right"></i></a>
+                    <p>Tư vấn, thiết kế và lắp đặt hệ thống PCCC tổng thể cho các khu đô thị, khu dân cư phức hợp theo
+                        tiêu chuẩn quốc tế.</p>
+                    <a href="{% url 'contact' %}" class="hero-btn">LIÊN HỆ NGAY <i
+                            class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -130,20 +136,17 @@
             <div class="product-carousel" id="product-carousel">
                 <!-- Slider Item 1 -->
                 <div class="prod-item">
-                    <img src="{% static 'images/hethongbom.jpg' %}"
-                        alt="Hệ thống bơm PCCC">
+                    <img src="{% static 'images/hethongbom.jpg' %}" alt="Hệ thống bơm PCCC">
                     <div class="prod-caption">HỆ THỐNG BƠM PCCC</div>
                 </div>
                 <!-- Slider Item 2 (Active/Center) -->
                 <div class="prod-item active">
-                    <img src="{% static 'images/tubaochay.jpg' %}"
-                        alt="Tủ trung tâm báo cháy">
+                    <img src="{% static 'images/tubaochay.jpg' %}" alt="Tủ trung tâm báo cháy">
                     <div class="prod-caption">TỦ TRUNG TÂM BÁO CHÁY</div>
                 </div>
                 <!-- Slider Item 3 -->
                 <div class="prod-item">
-                    <img src="{% static 'images/hethongchuachay.jpg' %}"
-                        alt="Hệ thống chữa cháy tự động">
+                    <img src="{% static 'images/hethongchuachay.jpg' %}" alt="Hệ thống chữa cháy tự động">
                     <div class="prod-caption">HỆ THỐNG CHỮA CHÁY TỰ ĐỘNG</div>
                 </div>
             </div>
@@ -157,26 +160,37 @@
     </div>
 </section>
 
-<!-- Dự Án Tiêu Biểu (Tương ứng Ảnh 5) -->
-<section class="projects-featured fade-up">
-    <div class="projects-bg">
-        <!-- Chèn background thông qua CSS hoặc inline style -->
-        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80"
-            alt="Nhà Ga Bến Tàu" class="projects-bg-img">
+<!-- Dự Án Tiêu Biểu -->
+<section class="projects-featured fade-up" id="projectFeatured">
+    <div class="projects-bg" id="projectBg">
+        <img src="{% static 'images/hero1.jpg' %}" alt="Dự án tiêu biểu" class="projects-bg-img" id="projectBgImg">
 
         <div class="container project-overlay-container">
             <div class="project-info-box">
-                <h3>NHÀ GA BẾN TÀU KHÁCH CÔN ĐẢO</h3>
+                <h3 id="projectTitle">KHÁCH SẠN MƯỜNG THANH</h3>
                 <div class="project-details">
-                    <p><strong>Quy mô:</strong> Tổng diện tích đất nền 2,56 ha</p>
-                    <p><strong>Hạng mục PCCC:</strong> Thi công lắp đặt 5000m2 hệ thống báo cháy tự động và hút khói
-                        hành lang, sảnh, phòng vé.</p>
+                    <p id="projectScale"><strong>Quy mô:</strong> Tổng diện tích 8.000m², 25 tầng</p>
+                    <p id="projectDesc"><strong>Hạng mục PCCC:</strong> Thi công lắp đặt hệ thống báo cháy tự động, sprinkler và hút khói toàn bộ tòa nhà.</p>
                 </div>
-                <!-- Dots for slider visual -->
                 <div class="project-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+                    <span class="dot active" data-proj="0"
+                          data-img="{% static 'images/hero1.jpg' %}"
+                          data-title="KHÁCH SẠN MƯỜNG THANH"
+                          data-scale="Tổng diện tích 8.000m², 25 tầng"
+                          data-desc="Thi công lắp đặt hệ thống báo cháy tự động, sprinkler và hút khói toàn bộ tòa nhà.">
+                    </span>
+                    <span class="dot" data-proj="1"
+                          data-img="{% static 'images/hero2.jpg' %}"
+                          data-title="KHU CHUNG CƯ VINHOMES"
+                          data-scale="4 tòa nhà, hơn 2.000 căn hộ"
+                          data-desc="Thiết kế &amp; lắp đặt hệ thống đầu phun sprinkler, bơm PCCC và báo cháy addressable.">
+                    </span>
+                    <span class="dot" data-proj="2"
+                          data-img="{% static 'images/hero3.jpg' %}"
+                          data-title="KHU ĐÔ THỊ ECOPARK"
+                          data-scale="Tổng diện tích 500ha, nhiều phân khu cao tầng"
+                          data-desc="Tổng thầu thi công toàn bộ hệ thống PCCC cho khu đô thị phức hợp.">
+                    </span>
                 </div>
             </div>
         </div>
@@ -185,6 +199,7 @@
         <a href="{% url 'projects' %}" class="btn-pill inline-btn">XEM DỰ ÁN</a>
     </div>
 </section>
+
 
 <!-- Khách Hàng Đánh Giá (Tương ứng Ảnh 1) -->
 <section class="testimonials-section fade-up">
@@ -248,11 +263,13 @@
                 <h2>ĐĂNG KÍ NHẬN TƯ VẤN</h2>
                 <div class="hotline-box">
                     <p><i class="fa-solid fa-phone"></i> HOTLINE CHÍNH</p>
-                    <h3><a href="tel:0917032888" style="color:var(--primary); text-decoration:none;">0917 032 888</a></h3>
+                    <h3><a href="tel:0917032888" style="color:var(--primary); text-decoration:none;">0917 032 888</a>
+                    </h3>
                 </div>
                 <div class="hotline-box">
                     <p><i class="fa-solid fa-phone"></i> HOTLINE PHỤ</p>
-                    <h3><a href="tel:0936810103" style="color:var(--primary); text-decoration:none;">0936 810 103</a></h3>
+                    <h3><a href="tel:0936810103" style="color:var(--primary); text-decoration:none;">0936 810 103</a>
+                    </h3>
                 </div>
             </div>
 

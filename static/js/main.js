@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const prodItems = document.querySelectorAll('.prod-item');
     if (prodItems.length >= 3) {
         let currentIndex = 1; // Middle item active initially
+
         const updateCarousel = () => {
             prodItems.forEach((item, index) => {
                 item.classList.remove('active', 'prev', 'next');
@@ -59,6 +60,24 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         };
         updateCarousel();
+
+        // Click on prev/next item → bring it to center
+        // Click on active (center) item → navigate to services page
+        prodItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                if (item.classList.contains('active')) {
+                    // Active item clicked → go to services
+                    window.location.href = document.querySelector('a[href*="services"]')?.href || '/dich-vu/';
+                } else {
+                    // Side item clicked → make it active
+                    currentIndex = index;
+                    updateCarousel();
+                }
+            });
+
+            // Change cursor to pointer for better UX hint
+            item.style.cursor = 'pointer';
+        });
 
         document.getElementById('prod-next')?.addEventListener('click', () => {
             currentIndex = (currentIndex + 1) % prodItems.length;

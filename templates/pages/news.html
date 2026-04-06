@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Tin Tức PCCC | Việt Dream{% endblock %}
+
+{% block content %}
+<section class="page-header" style="background-color: var(--secondary); color: white; padding: 100px 0 50px; text-align: center;">
+    <div class="container fade-up">
+        <h1>Tin Tức & Kiến Thức PCCC</h1>
+        <p style="margin-top: 15px; font-size: 18px; opacity: 0.8;">Cập nhật các quy định, kiến thức an toàn mới nhất về phòng cháy chữa cháy</p>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="services-grid pt-4">
+            <!-- News 1 -->
+            <div class="service-card fade-up" style="padding: 0; overflow: hidden;">
+                <div style="padding: 25px;">
+                    <h3 style="margin: 10px 0; font-size: 18px;"><a href="#">Quy định mới nhất về PCCC cho chung cư mini năm 2026</a></h3>
+                    <p style="font-size: 14px; margin-bottom: 15px; color: var(--text-gray);">Theo thông tư mới ban hành, các chung cư mini buộc phải trang bị cửa chống cháy, lối thoát hiểm khẩn cấp và hệ thống báo cháy tự động ngắt thiết bị điện...</p>
+                    <a href="#" class="read-more" style="font-size: 14px;">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- News 2 -->
+            <div class="service-card fade-up" style="transition-delay: 0.2s; padding: 0; overflow: hidden;">
+                <div style="padding: 25px;">
+                    <h3 style="margin: 10px 0; font-size: 18px;"><a href="#">Hướng dẫn bảo dưỡng bình chữa cháy bột định kỳ</a></h3>
+                    <p style="font-size: 14px; margin-bottom: 15px; color: var(--text-gray);">Bình chữa cháy nếu không bảo dưỡng định kỳ sẽ mất tác dụng khi có sự cố. Cần kiểm tra đồng hồ áp suất, cân nặng và nạp lại định kỳ 6 tháng - 1 năm...</p>
+                    <a href="#" class="read-more" style="font-size: 14px;">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- News 3 -->
+            <div class="service-card fade-up" style="transition-delay: 0.4s; padding: 0; overflow: hidden;">
+                <div style="padding: 25px;">
+                    <h3 style="margin: 10px 0; font-size: 18px;"><a href="#">Hệ thống chữa cháy Sprinkler là gì? Hoạt động ra sao?</a></h3>
+                    <p style="font-size: 14px; margin-bottom: 15px; color: var(--text-gray);">Sprinkler là hệ thống chữa cháy tự động bằng nước phổ biến nhất. Khám phá nguyên lý hoạt động của ống thủy tinh nhạy nhiệt trong đầu phun Sprinkler...</p>
+                    <a href="#" class="read-more" style="font-size: 14px;">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+{% endblock %}

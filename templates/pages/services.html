@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Dịch Vụ PCCC | Việt Dream{% endblock %}
+
+{% block content %}
+<section class="page-header" style="background-color: var(--secondary); color: white; padding: 100px 0 50px; text-align: center;">
+    <div class="container fade-up">
+        <h1>Dịch Vụ PCCC</h1>
+        <p style="margin-top: 15px; font-size: 18px; opacity: 0.8;">Khảo sát, thiết kế, thi công, bảo trì toàn diện - Cam kết chuẩn nhà nước</p>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <!-- Service 1 -->
+        <div class="why-container" style="margin-bottom: 80px;">
+            <div class="why-img fade-up">
+                <div class="placeholder-img" style="background: linear-gradient(45deg, #1D3557, #E63946); height: 350px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: white;">
+                    <i class="fa-solid fa-pen-ruler fa-5x"></i>
+                </div>
+            </div>
+            <div class="why-content fade-up" style="transition-delay: 0.2s;">
+                <h2 style="font-size: 28px; color: var(--secondary); margin-bottom: 20px;">1. Tư Vấn & Thiết Kế Hệ Thống PCCC</h2>
+                <p style="margin-bottom: 15px;">Chúng tôi có đội ngũ kỹ sư thiết kế am hiểu sâu sắc quy chuẩn, tiêu chuẩn PCCC hiện hành. Chúng tôi chuyên đảm nhận:</p>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-angle-right"></i> Khảo sát công trình, lập phương án thiết kế cho nhà xưởng, chung cư mini, văn phòng.</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Thiết kế hệ thống báo cháy tự động, hệ thống chữa cháy Sprinkler.</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Tư vấn thủ tục pháp lý, xin giấy phép thẩm duyệt an toàn PCCC.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="why-container" style="margin-bottom: 80px; flex-direction: row-reverse;">
+            <div class="why-img fade-up">
+                <div class="placeholder-img" style="background: linear-gradient(45deg, #2B2D42, #8D99AE); height: 350px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: white;">
+                    <i class="fa-solid fa-hard-hat fa-5x"></i>
+                </div>
+            </div>
+            <div class="why-content fade-up" style="transition-delay: 0.2s;">
+                <h2 style="font-size: 28px; color: var(--secondary); margin-bottom: 20px;">2. Thi Công & Lắp Đặt PCCC</h2>
+                <p style="margin-bottom: 15px;">Quá trình thi công được giám sát nghiêm ngặt, đảm bảo an toàn, tiến độ và chất lượng:</p>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-angle-right"></i> Lắp đặt trạm bơm chữa cháy, mạng lưới ống dẫn nước chữa cháy vách tường.</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Lắp đặt tủ báo cháy, đầu báo khói, đầu báo nhiệt.</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Thi công hệ thống tăng áp hút khói, màng nước chữa cháy.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="why-container">
+            <div class="why-img fade-up">
+                <div class="placeholder-img" style="background: linear-gradient(45deg, #E63946, #F1FAEE); height: 350px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: var(--primary);">
+                    <i class="fa-solid fa-toolbox fa-5x"></i>
+                </div>
+            </div>
+            <div class="why-content fade-up" style="transition-delay: 0.2s;">
+                <h2 style="font-size: 28px; color: var(--secondary); margin-bottom: 20px;">3. Bảo Trì Hệ Thống PCCC Định Kỳ</h2>
+                <p style="margin-bottom: 15px;">Hệ thống PCCC cần được kiểm tra hoạt động thường xuyên để ứng phó kịp thời sự cố:</p>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-angle-right"></i> Kiểm tra tủ trung tâm báo cháy, tín hiệu các đầu báo.</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Bảo dưỡng cụm máy bơm chữa cháy, kiểm tra áp suất đường ống.</li>
+                    <li><i class="fa-solid fa-angle-right"></i> Nạp lại bình chữa cháy bột, khí CO2 đã hết hạn.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

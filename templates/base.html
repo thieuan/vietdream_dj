@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Việt Dream - Chuyên gia Phòng cháy chữa cháy{% endblock %}</title>
+    <meta name="description" content="Công ty TNHH Việt Dream cung cấp dịch vụ thiết kế, thi công giải pháp phòng cháy chữa cháy chuyên nghiệp cho công trình.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="{% url 'home' %}" class="logo">
+                <i class="fa-solid fa-fire-extinguisher"></i> Việt<span>Dream</span>
+            </a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-menu">
+                    <li><a href="{% url 'home' %}" class="nav-link">Trang Chủ</a></li>
+                    <li><a href="{% url 'about' %}" class="nav-link">Giới Thiệu</a></li>
+                    <li><a href="{% url 'services' %}" class="nav-link">Dịch Vụ PCCC</a></li>
+                    <li><a href="{% url 'projects' %}" class="nav-link">Dự Án</a></li>
+                    <li><a href="{% url 'news' %}" class="nav-link">Tin Tức</a></li>
+                    <li><a href="{% url 'contact' %}" class="btn-contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="{% url 'home' %}" class="logo footer-logo">
+                    <i class="fa-solid fa-fire-extinguisher"></i> Việt<span>Dream</span>
+                </a>
+                <p class="footer-desc">Công ty tư vấn thiết kế, thi công hệ thống phòng cháy chữa cháy hàng đầu tại Việt Nam. Đảm bảo an toàn tuyệt đối cho mọi công trình.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Liên Kết Nhanh</h4>
+                <ul>
+                    <li><a href="{% url 'about' %}">Về Chúng Tôi</a></li>
+                    <li><a href="{% url 'services' %}">Dịch Vụ PCCC</a></li>
+                    <li><a href="{% url 'projects' %}">Dự Án Tiêu Biểu</a></li>
+                    <li><a href="{% url 'news' %}">Kiến Thức & Tin Tức</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Thông Tin Liên Hệ</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Trụ sở chính: Hà Nội, Việt Nam</li>
+                    <li><i class="fa-solid fa-phone"></i> Hotline: 0904 558 099</li>
+                    <li><i class="fa-solid fa-envelope"></i> Email: contact@vietdream.vn</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Công Ty TNHH Việt Dream. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

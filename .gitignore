@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.egg/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+
+# Vercel
+.vercel/
+
+# OS generated files
+.DS_Store
+Thumbs.db

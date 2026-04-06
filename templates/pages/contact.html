@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Liên Hệ | Việt Dream{% endblock %}
+
+{% block content %}
+<section class="page-header" style="background-color: var(--secondary); color: white; padding: 100px 0 50px; text-align: center;">
+    <div class="container fade-up">
+        <h1>Liên Hệ Với Chúng Tôi</h1>
+        <p style="margin-top: 15px; font-size: 18px; opacity: 0.8;">Chúng tôi luôn sẵn sàng lắng nghe và tư vấn giải pháp tốt nhất cho bạn</p>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info-blocks fade-up">
+                <h2 style="font-size: 28px; color: var(--secondary); margin-bottom: 30px;">Thông Tin <span style="color: var(--primary);">Liên Hệ</span></h2>
+                <div class="service-card" style="margin-bottom: 20px;">
+                    <div class="service-icon" style="font-size: 30px; margin-bottom: 10px;"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h3>Trụ sở chính</h3>
+                    <p style="margin-bottom: 0;">Tòa nhà Lotte Center, Đào Tấn, Ba Đình, Hà Nội</p>
+                </div>
+                <div class="service-card" style="margin-bottom: 20px;">
+                    <div class="service-icon" style="font-size: 30px; margin-bottom: 10px;"><i class="fa-solid fa-phone-volume"></i></div>
+                    <h3>Hotline</h3>
+                    <p style="margin-bottom: 0;">0904 558 099</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon" style="font-size: 30px; margin-bottom: 10px;"><i class="fa-solid fa-envelope-open-text"></i></div>
+                    <h3>Email</h3>
+                    <p style="margin-bottom: 0;">contact@vietdream.vn</p>
+                </div>
+            </div>
+            
+            <div class="contact-form fade-up" style="transition-delay: 0.2s;">
+                <h2 style="font-size: 28px; color: var(--secondary); margin-bottom: 30px;">Gửi <span style="color: var(--primary);">Yêu Cầu</span></h2>
+                <form action="#" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Họ và tên của bạn" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email liên hệ" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" name="phone" placeholder="Số điện thoại" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" placeholder="Loại công trình (Chung cư, nhà xưởng...)" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Nội dung cần tư vấn..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Gửi Yêu Cầu</button>
+                    <p style="margin-top: 15px; font-size: 13px; color: var(--text-gray); text-align: center;">Bằng việc gửi yêu cầu, bạn đồng ý với chính sách bảo mật của chúng tôi.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

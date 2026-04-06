@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Dự Án Tiêu Biểu | Việt Dream{% endblock %}
+
+{% block content %}
+<section class="page-header" style="background-color: var(--secondary); color: white; padding: 100px 0 50px; text-align: center;">
+    <div class="container fade-up">
+        <h1>Dự Án Tiêu Biểu</h1>
+        <p style="margin-top: 15px; font-size: 18px; opacity: 0.8;">Các công trình được Việt Dream thiết kế và thi công hệ thống PCCC</p>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <div class="services-grid pt-4">
+            <!-- Project 1 -->
+            <div class="service-card fade-up" style="padding: 0; overflow: hidden;">
+                <div style="background: #ccc; height: 200px; display: flex; align-items: center; justify-content: center; color: white;">
+                    <i class="fa-solid fa-city fa-3x"></i>
+                </div>
+                <div style="padding: 25px;">
+                    <span style="font-size: 12px; font-weight: bold; color: var(--primary); text-transform: uppercase;">Chung Cư Mini</span>
+                    <h3 style="margin: 10px 0;">CCMN Hoa Bằng - Cầu Giấy</h3>
+                    <p style="font-size: 14px; margin-bottom: 15px;">Hệ thống báo cháy tự động, chữa cháy vách tường, cửa chống cháy.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="service-card fade-up" style="transition-delay: 0.2s; padding: 0; overflow: hidden;">
+                <div style="background: #778da9; height: 200px; display: flex; align-items: center; justify-content: center; color: white;">
+                    <i class="fa-solid fa-industry fa-3x"></i>
+                </div>
+                <div style="padding: 25px;">
+                    <span style="font-size: 12px; font-weight: bold; color: var(--primary); text-transform: uppercase;">Nhà Xưởng</span>
+                    <h3 style="margin: 10px 0;">Nhà Máy May Hưng Yên</h3>
+                    <p style="font-size: 14px; margin-bottom: 15px;">Hệ thống chữa cháy Sprinkler tự động, báo cháy địa chỉ, hệ thống bơm.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="service-card fade-up" style="transition-delay: 0.4s; padding: 0; overflow: hidden;">
+                <div style="background: #e0e1dd; height: 200px; display: flex; align-items: center; justify-content: center; color: var(--secondary);">
+                    <i class="fa-solid fa-building-user fa-3x"></i>
+                </div>
+                <div style="padding: 25px;">
+                    <span style="font-size: 12px; font-weight: bold; color: var(--primary); text-transform: uppercase;">Tòa Nhà Văn Phòng</span>
+                    <h3 style="margin: 10px 0;">Tòa nhà văn phòng Láng Hạ</h3>
+                    <p style="font-size: 14px; margin-bottom: 15px;">Thiết kế & Lắp đặt hệ thống hút khói, báo cháy trung tâm, đèn sự cố.</p>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="service-card fade-up" style="padding: 0; overflow: hidden;">
+                <div style="background: #ee6c4d; height: 200px; display: flex; align-items: center; justify-content: center; color: white;">
+                    <i class="fa-solid fa-store fa-3x"></i>
+                </div>
+                <div style="padding: 25px;">
+                    <span style="font-size: 12px; font-weight: bold; color: var(--primary); text-transform: uppercase;">Siêu Thị / Cửa Hàng</span>
+                    <h3 style="margin: 10px 0;">Chuỗi Siêu thị mini</h3>
+                    <p style="font-size: 14px; margin-bottom: 15px;">Tư vấn giấy phép PCCC, cung cấp bình chữa cháy, đèn Exit, bảng báo.</p>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="service-card fade-up" style="transition-delay: 0.2s; padding: 0; overflow: hidden;">
+                <div style="background: #98c1d9; height: 200px; display: flex; align-items: center; justify-content: center; color: white;">
+                    <i class="fa-solid fa-hotel fa-3x"></i>
+                </div>
+                <div style="padding: 25px;">
+                    <span style="font-size: 12px; font-weight: bold; color: var(--primary); text-transform: uppercase;">Khách Sạn</span>
+                    <h3 style="margin: 10px 0;">Khách sạn Lake View</h3>
+                    <p style="font-size: 14px; margin-bottom: 15px;">Hệ thống báo cháy kết nối trung tâm, chữa cháy tự động toàn khu vực.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

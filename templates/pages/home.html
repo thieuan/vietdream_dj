@@ -4,37 +4,59 @@
 {% block title %}Trang Chủ | Việt Dream - Công Ty PCCC Chuyên Nghiệp{% endblock %}
 
 {% block content %}
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-        <h1 class="fade-up">Giải Pháp <span class="text-primary">Phòng Cháy Chữa Cháy</span> Toàn Diện</h1>
-        <p class="fade-up" style="transition-delay: 0.2s">Chúng tôi cung cấp dịch vụ thiết kế, tư vấn và thi công hệ thống phòng cháy chữa cháy an toàn, chất lượng cao cho mọi công trình.</p>
-        <div class="hero-btns fade-up" style="transition-delay: 0.4s">
-            <a href="{% url 'contact' %}" class="btn btn-primary">Nhận Tư Vấn Ngay</a>
-            <a href="{% url 'projects' %}" class="btn btn-outline" style="color: white; border-color: white;">Xem Dự Án</a>
+<!-- Hero Section Mới -->
+<section class="hero hero-new">
+    <div class="hero-new-bg">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80" alt="Building Background">
+    </div>
+    <div class="container hero-new-content">
+        <div class="hero-new-text fade-up">
+            <h1>Khám Phá <span style="color: var(--primary);">Giải Pháp</span><br>Phòng Cháy Chữa Cháy</h1>
+            <p>Với phương châm "Tất cả cho chất lượng - Chất lượng cho tất cả", Việt Dream cung cấp các giải pháp toàn diện cho công trình.</p>
+            <a href="{% url 'services' %}" class="btn-pill" style="margin-top: 20px;">XEM DỊCH VỤ</a>
         </div>
     </div>
 </section>
 
-<!-- Stats Section -->
-<section class="stats section-padding fade-up">
-    <div class="container stats-grid">
-        <div class="stat-item">
-            <h3>10+</h3>
-            <p>Năm Kinh Nghiệm</p>
-        </div>
-        <div class="stat-item">
-            <h3>500+</h3>
-            <p>Dự Án Hoàn Thành</p>
-        </div>
-        <div class="stat-item">
-            <h3>50+</h3>
-            <p>Đối Tác Tin Cậy</p>
-        </div>
-        <div class="stat-item">
-            <h3>100%</h3>
-            <p>Đạt Tiêu Chuẩn</p>
+<!-- Stats Box Section (Overlapping Hero) -->
+<section class="stats-overlap-wrapper fade-up">
+    <div class="container">
+        <div class="stats-overlap-box">
+            <h2 class="stats-o-title">Năng Lực <span style="color: var(--primary);">Của Chúng Tôi</span></h2>
+            
+            <div class="stats-o-grid">
+                <div class="stats-o-item">
+                    <div class="stats-o-icon"><i class="fa-solid fa-industry"></i></div>
+                    <div class="stats-o-text">
+                        <h3>10+</h3>
+                        <p>NĂM KINH NGHIỆM</p>
+                    </div>
+                </div>
+                
+                <div class="stats-o-item">
+                    <div class="stats-o-icon"><i class="fa-solid fa-box"></i></div>
+                    <div class="stats-o-text">
+                        <h3>60+</h3>
+                        <p>DÒNG SẢN PHẨM</p>
+                    </div>
+                </div>
+
+                <div class="stats-o-item">
+                    <div class="stats-o-icon"><i class="fa-solid fa-users-gear"></i></div>
+                    <div class="stats-o-text">
+                        <h3>500</h3>
+                        <p>KỸ SƯ GIÀU KINH NGHIỆM</p>
+                    </div>
+                </div>
+
+                <div class="stats-o-item">
+                    <div class="stats-o-icon"><i class="fa-solid fa-building-flag"></i></div>
+                    <div class="stats-o-text">
+                        <h3>200+</h3>
+                        <p>DỰ ÁN QUY MÔ CẢ NƯỚC</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

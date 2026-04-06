@@ -41,4 +41,32 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.fade-up').forEach((el) => {
         observer.observe(el);
     });
+
+    // Product Carousel Logic
+    const prodItems = document.querySelectorAll('.prod-item');
+    if (prodItems.length >= 3) {
+        let currentIndex = 1; // Middle item active initially
+        const updateCarousel = () => {
+            prodItems.forEach((item, index) => {
+                item.classList.remove('active', 'prev', 'next');
+                if (index === currentIndex) {
+                    item.classList.add('active');
+                } else if (index === (currentIndex - 1 + prodItems.length) % prodItems.length) {
+                    item.classList.add('prev');
+                } else if (index === (currentIndex + 1) % prodItems.length) {
+                    item.classList.add('next');
+                }
+            });
+        };
+        updateCarousel();
+
+        document.getElementById('prod-next')?.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % prodItems.length;
+            updateCarousel();
+        });
+        document.getElementById('prod-prev')?.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + prodItems.length) % prodItems.length;
+            updateCarousel();
+        });
+    }
 });

@@ -9,7 +9,7 @@
     <div class="hero-overlay"></div>
     <div class="container hero-content">
         <h1 class="fade-up">Giải Pháp <span class="text-primary">Phòng Cháy Chữa Cháy</span> Toàn Diện</h1>
-        <p class="fade-up" style="transition-delay: 0.2s">Chúng tôi cung cấp dịch vụ thiết kế, tư vấn và thi công hệ thống phòng cháy chữa cháy an toàn, chất lượng cao cho mọi công trình: chung cư, văn phòng, nhà xưởng, siêu thị.</p>
+        <p class="fade-up" style="transition-delay: 0.2s">Chúng tôi cung cấp dịch vụ thiết kế, tư vấn và thi công hệ thống phòng cháy chữa cháy an toàn, chất lượng cao cho mọi công trình.</p>
         <div class="hero-btns fade-up" style="transition-delay: 0.4s">
             <a href="{% url 'contact' %}" class="btn btn-primary">Nhận Tư Vấn Ngay</a>
             <a href="{% url 'projects' %}" class="btn btn-outline" style="color: white; border-color: white;">Xem Dự Án</a>
@@ -39,68 +39,154 @@
     </div>
 </section>
 
-<!-- Services Section -->
-<section class="services section-padding section-bg">
+<!-- Sản Phẩm Tiêu Biểu (Tương ứng Ảnh 4) -->
+<section class="products-section section-padding">
     <div class="container">
         <div class="section-title fade-up">
-            <h2>Dịch Vụ <span>Nổi Bật</span></h2>
-            <p>Việt Dream tự hào là đơn vị tiên phong mang đến các giải pháp phòng chống cháy nổ hiện đại, đáp ứng quy chuẩn cao nhất của nhà nước.</p>
+            <h2>Sản Phẩm <span style="color: var(--primary);">Tiêu Biểu</span></h2>
         </div>
         
-        <div class="services-grid pt-4">
-            <div class="service-card fade-up">
-                <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-                <h3>Tư Vấn & Thiết Kế PCCC</h3>
-                <p>Khảo sát, lập phương án và thiết kế bản vẽ hệ thống PCCC, xin giấy phép thẩm duyệt một cách nhanh chóng và tối ưu chi phí.</p>
-                <a href="{% url 'services' %}" class="read-more">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="product-carousel-wrapper fade-up">
+            <button class="carousel-nav prev-nav" id="prod-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            
+            <div class="product-carousel" id="product-carousel">
+                <!-- Slider Item 1 -->
+                <div class="prod-item">
+                    <img src="https://images.unsplash.com/photo-1541888081682-1dd38f972b93?auto=format&fit=crop&w=800&q=80" alt="Hệ thống chữa cháy">
+                    <div class="prod-caption">HỆ THỐNG CHỮA CHÁY TỰ ĐỘNG</div>
+                </div>
+                <!-- Slider Item 2 (Active/Center) -->
+                <div class="prod-item active">
+                    <img src="https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?auto=format&fit=crop&w=800&q=80" alt="Máy bơm PCCC">
+                    <div class="prod-caption">HỆ THỐNG MÁY BƠM PCCC</div>
+                </div>
+                <!-- Slider Item 3 -->
+                <div class="prod-item">
+                    <img src="https://images.unsplash.com/photo-1555529733-0e670560f4e1?auto=format&fit=crop&w=800&q=80" alt="Tủ trung tâm báo cháy">
+                    <div class="prod-caption">TỦ TRUNG TÂM BÁO CHÁY</div>
+                </div>
             </div>
             
-            <div class="service-card fade-up" style="transition-delay: 0.2s">
-                <div class="service-icon"><i class="fa-solid fa-helmet-safety"></i></div>
-                <h3>Thi Công & Lắp Đặt PCCC</h3>
-                <p>Triển khai lắp đặt hệ thống báo cháy, chữa cháy tự động, hệ thống hút khói cho chung cư mini, tòa nhà văn phòng, đại siêu thị.</p>
-                <a href="{% url 'services' %}" class="read-more">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+            <button class="carousel-nav next-nav" id="prod-next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="text-center" style="margin-top: 30px;">
+            <a href="{% url 'services' %}" class="btn-pill fade-up">XEM THÊM</a>
+        </div>
+    </div>
+</section>
 
-            <div class="service-card fade-up" style="transition-delay: 0.4s">
-                <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                <h3>Bảo Trì & Bảo Dưỡng</h3>
-                <p>Kiểm tra, bảo dưỡng định kỳ hệ thống máy bơm, bình chữa cháy, đường ống đảm bảo hệ thống luôn trong trạng thái sẵn sàng 24/7.</p>
-                <a href="{% url 'services' %}" class="read-more">Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i></a>
+<!-- Dự Án Tiêu Biểu (Tương ứng Ảnh 5) -->
+<section class="projects-featured fade-up">
+    <div class="projects-bg">
+        <!-- Chèn background thông qua CSS hoặc inline style -->
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80" alt="Nhà Ga Bến Tàu" class="projects-bg-img">
+        
+        <div class="container project-overlay-container">
+            <div class="project-info-box">
+                <h3>NHÀ GA BẾN TÀU KHÁCH CÔN ĐẢO</h3>
+                <div class="project-details">
+                    <p><strong>Quy mô:</strong> Tổng diện tích đất nền 2,56 ha</p>
+                    <p><strong>Hạng mục PCCC:</strong> Thi công lắp đặt 5000m2 hệ thống báo cháy tự động và hút khói hành lang, sảnh, phòng vé.</p>
+                </div>
+                <!-- Dots for slider visual -->
+                <div class="project-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center project-btn-wrapper">
+        <a href="{% url 'projects' %}" class="btn-pill inline-btn">XEM DỰ ÁN</a>
+    </div>
+</section>
+
+<!-- Khách Hàng Đánh Giá (Tương ứng Ảnh 1) -->
+<section class="testimonials-section fade-up">
+    <div class="container testimonials-flex">
+        <div class="testimo-title">
+            <h2>Khách Hàng<br><span class="highlight">Đánh Giá</span></h2>
+        </div>
+        
+        <div class="testimo-slider">
+            <button class="tes-nav"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="tes-content">
+                <div class="tes-avatar">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Ông Nguyễn Bá Diễn">
+                </div>
+                <div class="tes-text">
+                    <p>"Nhiều chủ đầu tư quyết định lựa chọn Việt Dream thay thế cho các thương hiệu quốc tế nhờ chất lượng sánh ngang hàng ngoại nhập nhưng giá thành vẫn ở mức nội địa, phù hợp với đại đa số người tiêu dùng Việt Nam. Bên cạnh đó, chính sách chăm sóc tuyệt vời."</p>
+                    <div class="tes-author">
+                        <h4>Ông Nguyễn Bá Diễn</h4>
+                        <span>Giám đốc Công ty CP đầu tư và sản xuất Châu Á</span>
+                    </div>
+                </div>
+            </div>
+            <button class="tes-nav"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- Được Tin Dùng Bởi (Tương ứng Ảnh 2) -->
+<section class="partners-section section-padding fade-up">
+    <div class="container text-center">
+        <h2 class="partner-heading">Được <span style="color: var(--primary);">Tin Dùng</span> Bởi</h2>
+        <div class="partners-logo-grid">
+            <div class="partner-logo">
+                <span style="color: #e63946; font-weight: 800; font-size: 24px;">VINGROUP</span>
+            </div>
+            <div class="partner-logo">
+                <span style="color: #00763C; font-weight: 800; font-size: 24px;">Vietcombank</span>
+            </div>
+            <div class="partner-logo">
+                <span style="color: #004a98; font-weight: 800; font-size: 24px;">BIDV</span>
+            </div>
+            <div class="partner-logo">
+                <span style="color: #0060b5; font-weight: 800; font-size: 24px;">Sacombank</span>
+            </div>
+            <div class="partner-logo">
+                <span style="color: #fca311; font-weight: 800; font-size: 24px;">Kangaroo</span>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Why Choose Us -->
-<section class="why-us section-padding">
-    <div class="container why-container">
-        <div class="why-img fade-up">
-            <!-- Dùng một placeholder cho ảnh minh hoạ -->
-            <div class="placeholder-img" style="background: linear-gradient(45deg, var(--secondary), var(--secondary-light)); height: 400px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; color: white;">
-                <i class="fa-solid fa-shield-halved fa-6x"></i>
+<!-- Đăng Ký Tư Vấn (Tương ứng Ảnh 3 nửa trên) -->
+<section class="consulting-form-section fade-up">
+    <div class="consulting-bg">
+        <div class="container consulting-flex">
+            <!-- Left Info -->
+            <div class="consulting-info">
+                <h2>ĐĂNG KÍ NHẬN TƯ VẤN</h2>
+                <div class="hotline-box">
+                    <p><i class="fa-solid fa-phone"></i> HOTLINE MIỀN BẮC</p>
+                    <h3>0904 558 099</h3>
+                </div>
+                <div class="hotline-box">
+                    <p><i class="fa-solid fa-phone"></i> HOTLINE MIỀN NAM</p>
+                    <h3>0966 742 068</h3>
+                </div>
             </div>
-        </div>
-        <div class="why-content fade-up" style="transition-delay: 0.2s">
-            <h2 style="font-size: 32px; color: var(--secondary); margin-bottom: 20px;">Vì sao chọn <span style="color: var(--primary);">Việt Dream?</span></h2>
-            <p style="margin-bottom: 30px; color: var(--text-gray);">Chúng tôi thấu hiểu rằng an toàn sinh mạng và tài sản là ưu tiên số một. Với phương châm "Tất cả cho chất lượng - An toàn cho mọi nhà", chúng tôi cam kết:</p>
             
-            <ul class="feature-list">
-                <li><i class="fa-solid fa-check"></i> Đội ngũ kỹ sư, công nhân viên trình độ cao, nhiệt huyết.</li>
-                <li><i class="fa-solid fa-check"></i> Sản phẩm, vật tư chính hãng, nguồn gốc rõ ràng, đạt chuẩn PCCC.</li>
-                <li><i class="fa-solid fa-check"></i> Thi công đúng tiến độ, đảm bảo quy trình kiểm định khắt khe.</li>
-                <li><i class="fa-solid fa-check"></i> Dịch vụ hậu mãi 24/7, luôn đồng hành cùng khách hàng.</li>
-            </ul>
+            <!-- Right Form -->
+            <div class="consulting-form-box">
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <input type="text" placeholder="Họ và tên *" required class="flat-input">
+                        <input type="tel" placeholder="Số điện thoại *" required class="flat-input">
+                    </div>
+                    <div class="form-row">
+                        <input type="email" placeholder="Email" class="flat-input">
+                        <input type="text" placeholder="Công ty" class="flat-input">
+                    </div>
+                    <textarea placeholder="Nội dung cần tư vấn" rows="4" class="flat-input"></textarea>
+                    <button type="submit" class="btn-submit-form">GỬI YÊU CẦU</button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- CTA Section -->
-<section class="cta section-padding" style="background-color: var(--primary); color: white; text-align: center;">
-    <div class="container fade-up">
-        <h2 style="font-size: 36px; margin-bottom: 20px; color: white;">Bạn Cần Tư Vấn Thiết Kế PCCC Cho Công Trình?</h2>
-        <p style="font-size: 18px; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">Hãy liên hệ ngay với Việt Dream để được hỗ trợ khảo sát và lên báo giá miễn phí, tối ưu nhất.</p>
-        <a href="{% url 'contact' %}" class="btn" style="background-color: white; color: var(--primary);">Hotline: 0904 558 099</a>
-    </div>
-</section>
 {% endblock %}

@@ -41,40 +41,57 @@
         {% block content %}{% endblock %}
     </main>
 
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-col">
-                <a href="{% url 'home' %}" class="logo footer-logo">
-                    <i class="fa-solid fa-fire-extinguisher"></i> Việt<span>Dream</span>
+    <footer class="footer-new">
+        <div class="container footer-new-container">
+            <!-- Cột 1: Logo và Năng lực -->
+            <div class="footer-new-col col-logo">
+                <a href="{% url 'home' %}" class="logo-light">
+                    <i class="fa-solid fa-face-smile"></i> VIET<span style="color:var(--primary);">DREAM</span>
                 </a>
-                <p class="footer-desc">Công ty tư vấn thiết kế, thi công hệ thống phòng cháy chữa cháy hàng đầu tại Việt Nam. Đảm bảo an toàn tuyệt đối cho mọi công trình.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <div class="profile-download mt-4">
+                    <p class="font-weight-600 mb-2">Hồ sơ năng lực:</p>
+                    <a href="#" class="btn-download"><i class="fa-solid fa-link"></i> DOWNLOAD <i class="fa-solid fa-download"></i></a>
                 </div>
             </div>
-            <div class="footer-col">
-                <h4>Liên Kết Nhanh</h4>
+            
+            <!-- Cột 2: Địa chỉ -->
+            <div class="footer-new-col col-address">
+                <h4 class="col-title">ĐỊA CHỈ</h4>
+                <div class="address-item">
+                    <p class="font-weight-600">Miền Bắc</p>
+                    <p class="text-sm">Trụ sở: Tòa nhà A, Số 1 Ngõ 43, TP. Hà Nội</p>
+                </div>
+                <div class="address-item" style="margin-top: 15px;">
+                    <p class="font-weight-600">Miền Nam</p>
+                    <p class="text-sm">Chi nhánh: Phường Tân Bình, Tp. Hồ Chí Minh</p>
+                </div>
+            </div>
+
+            <!-- Cột 3: Liên kết -->
+            <div class="footer-new-col col-links">
+                <h4 class="col-title">LIÊN KẾT</h4>
                 <ul>
-                    <li><a href="{% url 'about' %}">Về Chúng Tôi</a></li>
-                    <li><a href="{% url 'services' %}">Dịch Vụ PCCC</a></li>
-                    <li><a href="{% url 'projects' %}">Dự Án Tiêu Biểu</a></li>
-                    <li><a href="{% url 'news' %}">Kiến Thức & Tin Tức</a></li>
+                    <li><a href="{% url 'about' %}">Giới thiệu</a></li>
+                    <li><a href="{% url 'services' %}">Sản phẩm</a></li>
+                    <li><a href="{% url 'projects' %}">Dự án</a></li>
+                    <li><a href="{% url 'news' %}">Góc tham khảo</a></li>
+                    <li><a href="{% url 'contact' %}">Liên hệ</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h4>Thông Tin Liên Hệ</h4>
-                <ul class="contact-info">
-                    <li><i class="fa-solid fa-location-dot"></i> Trụ sở chính: Hà Nội, Việt Nam</li>
-                    <li><i class="fa-solid fa-phone"></i> Hotline: 0904 558 099</li>
-                    <li><i class="fa-solid fa-envelope"></i> Email: contact@vietdream.vn</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 Công Ty TNHH Việt Dream. Tất cả các quyền được bảo lưu.</p>
+
+            <!-- Cột 4: Liên hệ -->
+            <div class="footer-new-col col-contact">
+                <h4 class="col-title">LIÊN HỆ</h4>
+                <p>Tel: 024 3764 9666</p>
+                <p>Email: <a href="mailto:contact@vietdream.vn">contact@vietdream.vn</a></p>
+                <div class="mt-3">
+                    <p>Hotline Miền Bắc</p>
+                    <p class="font-weight-600">0904 558 099</p>
+                </div>
+                <div class="mt-3">
+                    <p>Hotline Miền Nam</p>
+                    <p class="font-weight-600">0966 742 068</p>
+                </div>
             </div>
         </div>
     </footer>

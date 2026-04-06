@@ -600,3 +600,413 @@ img {
     .services-grid { grid-template-columns: 1fr; }
     .hero-content h1 { font-size: 32px; }
 }
+
+/* ================== SẢN PHẨM TIÊU BIỂU ================== */
+.product-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+.product-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1100px;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+}
+.prod-item {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    transition: all 0.5s ease;
+    opacity: 0.5;
+    transform: scale(0.8);
+    z-index: 1;
+    cursor: pointer;
+}
+.prod-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.prod-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-weight: 700;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s;
+}
+.prod-item.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 3;
+    width: 450px;
+    height: 350px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.prod-item.active .prod-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+.prod-item.prev, .prod-item.next {
+    z-index: 2;
+}
+.prod-item.prev { left: 0%; transform: translateX(0) scale(0.8); }
+.prod-item.active { left: 50%; transform: translateX(-50%) scale(1); }
+.prod-item.next { right: 0%; transform: translateX(0) scale(0.8); }
+
+.carousel-nav {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--secondary);
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+}
+.carousel-nav.prev-nav { left: 0; }
+.carousel-nav.next-nav { right: 0; }
+
+.btn-pill {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.btn-pill:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+/* ================== DỰ ÁN TIÊU BIỂU ================== */
+.projects-featured {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+.projects-bg {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.projects-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project-overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.project-info-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    width: 450px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--primary);
+}
+.project-info-box h3 {
+    color: var(--secondary);
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.project-details p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+.project-dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 25px;
+}
+.project-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.project-dots .dot.active {
+    background-color: var(--primary);
+}
+.project-btn-wrapper {
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+/* ================== KHÁCH HÀNG ĐÁNH GIÁ ================== */
+.testimonials-section {
+    background-color: #151515;
+    padding: 80px 0;
+    color: white;
+}
+.testimonials-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.testimo-title h2 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.testimo-title .highlight {
+    color: var(--primary);
+}
+.testimo-slider {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.tes-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    flex: 1;
+}
+.tes-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid var(--primary);
+}
+.tes-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tes-text {
+    flex: 1;
+}
+.tes-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #ccc;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.tes-author h4 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.tes-author span {
+    color: var(--primary);
+    font-size: 13px;
+}
+.tes-nav {
+    background: none;
+    border: none;
+    color: #555;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tes-nav:hover {
+    color: var(--primary);
+}
+
+/* ================== ĐỐI TÁC ================== */
+.partners-logo-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+}
+.partner-logo {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.partner-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* ================== FORM ĐĂNG KÝ ================== */
+.consulting-bg {
+    background-color: var(--secondary); /* The theme's Navy instead of light blue to keep color config */
+    padding: 60px 0;
+    color: white;
+}
+.consulting-flex {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 50px;
+}
+.consulting-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.consulting-info h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.hotline-box {
+    margin-bottom: 20px;
+}
+.hotline-box p {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hotline-box h3 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primary); /* Red hotline text */
+}
+.consulting-form-box {
+    flex: 1;
+    background: transparent;
+}
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.flat-input {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #333;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s;
+}
+.flat-input:focus {
+    border-color: var(--primary);
+}
+.btn-submit-form {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-weight: 600;
+    cursor: pointer;
+    float: right;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+.btn-submit-form:hover {
+    background-color: #c92a37;
+}
+
+/* ================== NEW FOOTER ================== */
+.footer-new {
+    background-color: #f9f9f9;
+    padding: 60px 0 30px;
+    color: #333;
+    border-top: 1px solid #eaeaea;
+}
+.footer-new-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+.logo-light {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--secondary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.font-weight-600 { font-weight: 600; }
+.text-sm { font-size: 14px; color: #555; }
+.btn-download {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-download:hover { background-color: var(--secondary); color: white; }
+.col-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+.col-links ul { list-style: none; padding: 0; }
+.col-links ul li { margin-bottom: 12px; }
+.col-links ul li a {
+    color: #555;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.col-links ul li a:hover { color: var(--primary); padding-left: 5px; }
+.col-contact p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 992px) {
+    .consulting-flex, .testimonials-flex { flex-direction: column; }
+    .project-info-box { width: 90%; }
+    .product-carousel { height: auto; display: block; overflow: auto; }
+    .prod-item { position: relative; width: 100%; height: auto; transform: none; opacity: 1; margin-bottom: 20px; }
+    .prod-item.active { width: 100%; height: auto; transform: none; left: 0; }
+    .prod-item.prev, .prod-item.next { display: none; }
+    .carousel-nav { display: none; }
+}
+@media (max-width: 768px) {
+    .footer-new-container { grid-template-columns: 1fr; }
+    .form-row { flex-direction: column; }
+}

@@ -2,9 +2,9 @@
 
 :root {
     /* Khối màu chủ đạo */
-    --primary: #E63946;    /* Đỏ tín hiệu PCCC */
-    --primary-dark: #D62828;
-    --secondary: #1D3557;  /* Xanh Navy cho sự tin cậy */
+    --primary: #C11D2D;    /* Đỏ tín hiệu PCCC từ Logo */
+    --primary-dark: #A81825;
+    --secondary: #1F3682;  /* Xanh Navy cho sự tin cậy từ Logo */
     --secondary-light: #457B9D;
     
     /* Màu nền & chữ */
@@ -105,6 +105,16 @@ img {
 
 .logo i {
     color: var(--primary);
+}
+
+.brand-logo {
+    max-height: 55px; /* Giới hạn chiều cao logo trong header */
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-new-col .brand-logo {
+    max-height: 80px; /* Logo to hơn một chút ở footer */
 }
 
 .nav-menu {

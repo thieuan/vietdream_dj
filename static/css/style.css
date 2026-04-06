@@ -1533,7 +1533,10 @@ img {
     .hero-slide-text h1 { font-size: 30px; }
     .hero-label { font-size: 11px; }
     .hero-btn { padding: 12px 22px; font-size: 13px; }
-    .hero-arrow { width: 40px; height: 40px; font-size: 14px; }
-    .hero-arrow-prev { left: 15px; }
-    .hero-arrow-next { right: 15px; }
+
+    /* Ẩn nút prev/next trên mobile để không che content */
+    .hero-arrow { display: none; }
+
+    /* Dots to hơn trên mobile để dễ bấm */
+    .hero-dot { width: 12px; height: 12px; }
 }

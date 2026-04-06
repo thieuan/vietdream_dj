@@ -136,6 +136,24 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
+        // Touch swipe support for mobile (replaces arrow buttons)
+        let touchStartX = 0;
+        heroTrack.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+
+        heroTrack.addEventListener('touchend', (e) => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) { // swipe threshold 50px
+                if (diff > 0) {
+                    goToSlide(currentSlide + 1); // swipe left → next
+                } else {
+                    goToSlide(currentSlide - 1); // swipe right → prev
+                }
+                resetTimer();
+            }
+        }, { passive: true });
+
         // Auto-play every 5s
         const startTimer = () => {
             autoTimer = setInterval(() => goToSlide(currentSlide + 1), 5000);

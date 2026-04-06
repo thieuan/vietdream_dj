@@ -69,4 +69,63 @@ document.addEventListener('DOMContentLoaded', () => {
             updateCarousel();
         });
     }
+
+    // ============ HERO HORIZONTAL SLIDER ============
+    const heroTrack = document.getElementById('heroTrack');
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    const heroDots = document.querySelectorAll('.hero-dot');
+    const totalSlides = heroSlides.length;
+
+    if (heroTrack && totalSlides > 0) {
+        let currentSlide = 0;
+        let autoTimer;
+
+        const goToSlide = (index) => {
+            // Deactivate old
+            heroSlides[currentSlide].classList.remove('active');
+            heroDots[currentSlide].classList.remove('active');
+
+            // Update index
+            currentSlide = (index + totalSlides) % totalSlides;
+
+            // Activate new
+            heroSlides[currentSlide].classList.add('active');
+            heroDots[currentSlide].classList.add('active');
+
+            // Move track: each slide takes 1/3 of the full 300% track
+            heroTrack.style.transform = `translateX(-${currentSlide * (100 / totalSlides)}%)`;
+        };
+
+        // Initialise first slide
+        heroSlides[0].classList.add('active');
+
+        // Arrows
+        document.getElementById('heroPrev')?.addEventListener('click', () => {
+            goToSlide(currentSlide - 1);
+            resetTimer();
+        });
+        document.getElementById('heroNext')?.addEventListener('click', () => {
+            goToSlide(currentSlide + 1);
+            resetTimer();
+        });
+
+        // Dots
+        heroDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                goToSlide(parseInt(dot.dataset.index));
+                resetTimer();
+            });
+        });
+
+        // Auto-play every 5s
+        const startTimer = () => {
+            autoTimer = setInterval(() => goToSlide(currentSlide + 1), 5000);
+        };
+        const resetTimer = () => {
+            clearInterval(autoTimer);
+            startTimer();
+        };
+        startTimer();
+    }
 });
+

@@ -4,17 +4,73 @@
 {% block title %}Trang Chủ | Việt Dream - Công Ty PCCC Chuyên Nghiệp{% endblock %}
 
 {% block content %}
-<!-- Hero Section Mới -->
-<section class="hero hero-new">
-    <div class="hero-new-bg">
-        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80" alt="Building Background">
-    </div>
-    <div class="container hero-new-content">
-        <div class="hero-new-text fade-up">
-            <h1>Khám Phá <span style="color: var(--primary);">Giải Pháp</span><br>Phòng Cháy Chữa Cháy</h1>
-            <p>Với phương châm "Tất cả cho chất lượng - Chất lượng cho tất cả", Việt Dream cung cấp các giải pháp toàn diện cho công trình.</p>
-            <a href="{% url 'services' %}" class="btn-pill" style="margin-top: 20px;">XEM DỊCH VỤ</a>
+<!-- Hero Horizontal Slider -->
+<section class="hero-slider-section">
+    <div class="hero-slider-track" id="heroTrack">
+
+        <!-- Slide 1: Tòa nhà thương mại cao tầng -->
+        <div class="hero-slide">
+            <div class="hero-slide-bg">
+                <img src="{% static 'images/hero1.jpg' %}" alt="Dự án tòa nhà văn phòng thương mại">
+                <div class="hero-slide-overlay"></div>
+            </div>
+            <div class="container hero-slide-content">
+                <div class="hero-slide-text">
+                    <span class="hero-label">Tòa Nhà Thương Mại</span>
+                    <h1>Giải Pháp PCCC<br><span>Công Trình Cao Tầng</span></h1>
+                    <p>Thiết kế & thi công hệ thống phòng cháy chữa cháy đồng bộ cho các tổ hợp thương mại, văn phòng từ 10 đến 50 tầng.</p>
+                    <a href="{% url 'projects' %}" class="hero-btn">XEM DỰ ÁN <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
+
+        <!-- Slide 2: Chung cư -->
+        <div class="hero-slide">
+            <div class="hero-slide-bg">
+                <img src="{% static 'images/hero2.jpg' %}" alt="Dự án chung cư xã hội">
+                <div class="hero-slide-overlay"></div>
+            </div>
+            <div class="container hero-slide-content">
+                <div class="hero-slide-text">
+                    <span class="hero-label">Chung Cư & Nhà Ở</span>
+                    <h1>An Toàn Cháy Nổ<br><span>Cho Mọi Căn Hộ</span></h1>
+                    <p>Hệ thống báo cháy tự động, đầu phun sprinkler và lối thoát hiểm được lắp đặt chuẩn TCVN cho khu nhà ở xã hội.</p>
+                    <a href="{% url 'services' %}" class="hero-btn">DỊCH VỤ PCCC <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Khu đô thị -->
+        <div class="hero-slide">
+            <div class="hero-slide-bg">
+                <img src="{% static 'images/hero3.jpg' %}" alt="Khu đô thị phức hợp">
+                <div class="hero-slide-overlay"></div>
+            </div>
+            <div class="container hero-slide-content">
+                <div class="hero-slide-text">
+                    <span class="hero-label">Khu Đô Thị Phức Hợp</span>
+                    <h1>Bảo Vệ Toàn Diện<br><span>Từng Công Trình</span></h1>
+                    <p>Tư vấn, thiết kế và lắp đặt hệ thống PCCC tổng thể cho các khu đô thị, khu dân cư phức hợp theo tiêu chuẩn quốc tế.</p>
+                    <a href="{% url 'contact' %}" class="hero-btn">LIÊN HỆ NGAY <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Prev / Next arrows -->
+    <button class="hero-arrow hero-arrow-prev" id="heroPrev">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="hero-arrow hero-arrow-next" id="heroNext">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <!-- Dots -->
+    <div class="hero-dots-bar">
+        <span class="hero-dot active" data-index="0"></span>
+        <span class="hero-dot" data-index="1"></span>
+        <span class="hero-dot" data-index="2"></span>
     </div>
 </section>
 
@@ -23,7 +79,7 @@
     <div class="container">
         <div class="stats-overlap-box">
             <h2 class="stats-o-title">Năng Lực <span style="color: var(--primary);">Của Chúng Tôi</span></h2>
-            
+
             <div class="stats-o-grid">
                 <div class="stats-o-item">
                     <div class="stats-o-icon"><i class="fa-solid fa-industry"></i></div>
@@ -32,7 +88,7 @@
                         <p>NĂM KINH NGHIỆM</p>
                     </div>
                 </div>
-                
+
                 <div class="stats-o-item">
                     <div class="stats-o-icon"><i class="fa-solid fa-box"></i></div>
                     <div class="stats-o-text">
@@ -67,31 +123,34 @@
         <div class="section-title fade-up">
             <h2>Sản Phẩm <span style="color: var(--primary);">Tiêu Biểu</span></h2>
         </div>
-        
+
         <div class="product-carousel-wrapper fade-up">
             <button class="carousel-nav prev-nav" id="prod-prev"><i class="fa-solid fa-chevron-left"></i></button>
-            
+
             <div class="product-carousel" id="product-carousel">
                 <!-- Slider Item 1 -->
                 <div class="prod-item">
-                    <img src="https://images.unsplash.com/photo-1541888081682-1dd38f972b93?auto=format&fit=crop&w=800&q=80" alt="Hệ thống chữa cháy">
+                    <img src="https://images.unsplash.com/photo-1541888081682-1dd38f972b93?auto=format&fit=crop&w=800&q=80"
+                        alt="Hệ thống chữa cháy">
                     <div class="prod-caption">HỆ THỐNG CHỮA CHÁY TỰ ĐỘNG</div>
                 </div>
                 <!-- Slider Item 2 (Active/Center) -->
                 <div class="prod-item active">
-                    <img src="https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?auto=format&fit=crop&w=800&q=80" alt="Máy bơm PCCC">
+                    <img src="https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?auto=format&fit=crop&w=800&q=80"
+                        alt="Máy bơm PCCC">
                     <div class="prod-caption">HỆ THỐNG MÁY BƠM PCCC</div>
                 </div>
                 <!-- Slider Item 3 -->
                 <div class="prod-item">
-                    <img src="https://images.unsplash.com/photo-1555529733-0e670560f4e1?auto=format&fit=crop&w=800&q=80" alt="Tủ trung tâm báo cháy">
+                    <img src="https://images.unsplash.com/photo-1555529733-0e670560f4e1?auto=format&fit=crop&w=800&q=80"
+                        alt="Tủ trung tâm báo cháy">
                     <div class="prod-caption">TỦ TRUNG TÂM BÁO CHÁY</div>
                 </div>
             </div>
-            
+
             <button class="carousel-nav next-nav" id="prod-next"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
-        
+
         <div class="text-center" style="margin-top: 30px;">
             <a href="{% url 'services' %}" class="btn-pill fade-up">XEM THÊM</a>
         </div>
@@ -102,14 +161,16 @@
 <section class="projects-featured fade-up">
     <div class="projects-bg">
         <!-- Chèn background thông qua CSS hoặc inline style -->
-        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80" alt="Nhà Ga Bến Tàu" class="projects-bg-img">
-        
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80"
+            alt="Nhà Ga Bến Tàu" class="projects-bg-img">
+
         <div class="container project-overlay-container">
             <div class="project-info-box">
                 <h3>NHÀ GA BẾN TÀU KHÁCH CÔN ĐẢO</h3>
                 <div class="project-details">
                     <p><strong>Quy mô:</strong> Tổng diện tích đất nền 2,56 ha</p>
-                    <p><strong>Hạng mục PCCC:</strong> Thi công lắp đặt 5000m2 hệ thống báo cháy tự động và hút khói hành lang, sảnh, phòng vé.</p>
+                    <p><strong>Hạng mục PCCC:</strong> Thi công lắp đặt 5000m2 hệ thống báo cháy tự động và hút khói
+                        hành lang, sảnh, phòng vé.</p>
                 </div>
                 <!-- Dots for slider visual -->
                 <div class="project-dots">
@@ -131,15 +192,18 @@
         <div class="testimo-title">
             <h2>Khách Hàng<br><span class="highlight">Đánh Giá</span></h2>
         </div>
-        
+
         <div class="testimo-slider">
             <button class="tes-nav"><i class="fa-solid fa-arrow-left"></i></button>
             <div class="tes-content">
                 <div class="tes-avatar">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80" alt="Ông Nguyễn Bá Diễn">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80"
+                        alt="Ông Nguyễn Bá Diễn">
                 </div>
                 <div class="tes-text">
-                    <p>"Nhiều chủ đầu tư quyết định lựa chọn Việt Dream thay thế cho các thương hiệu quốc tế nhờ chất lượng sánh ngang hàng ngoại nhập nhưng giá thành vẫn ở mức nội địa, phù hợp với đại đa số người tiêu dùng Việt Nam. Bên cạnh đó, chính sách chăm sóc tuyệt vời."</p>
+                    <p>"Nhiều chủ đầu tư quyết định lựa chọn Việt Dream thay thế cho các thương hiệu quốc tế nhờ chất
+                        lượng sánh ngang hàng ngoại nhập nhưng giá thành vẫn ở mức nội địa, phù hợp với đại đa số người
+                        tiêu dùng Việt Nam. Bên cạnh đó, chính sách chăm sóc tuyệt vời."</p>
                     <div class="tes-author">
                         <h4>Ông Nguyễn Bá Diễn</h4>
                         <span>Giám đốc Công ty CP đầu tư và sản xuất Châu Á</span>
@@ -191,7 +255,7 @@
                     <h3>0966 742 068</h3>
                 </div>
             </div>
-            
+
             <!-- Right Form -->
             <div class="consulting-form-box">
                 <form action="#" method="POST">

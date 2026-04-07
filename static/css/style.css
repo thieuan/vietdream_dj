@@ -553,6 +553,9 @@ img {
     align-items: center;
     gap: 50px;
 }
+.why-container.reverse {
+    flex-direction: row-reverse;
+}
 
 .why-img,
 .why-content {
@@ -618,7 +621,8 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .why-container {
+    .why-container,
+    .why-container.reverse {
         flex-direction: column;
     }
 

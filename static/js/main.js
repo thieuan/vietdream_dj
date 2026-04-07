@@ -116,27 +116,63 @@ document.addEventListener('DOMContentLoaded', () => {
     const projTitle = document.getElementById('projectTitle');
     const projScale = document.getElementById('projectScale');
     const projDesc = document.getElementById('projectDesc');
+    const projExtra = document.getElementById('projectExtra');
+    const projInfoLink = document.getElementById('projectInfoLink');
+    const projViewMore = document.getElementById('projectViewMore');
 
     if (projDots.length && projBgImg) {
         let currentProj = 0;
+
+        const updateInfoLink = (dot) => {
+            const link = dot.dataset.link || '';
+            if (projViewMore) {
+                if (link) {
+                    projViewMore.href = link;
+                    projViewMore.style.display = 'inline-flex';
+                } else {
+                    projViewMore.removeAttribute('href');
+                    projViewMore.style.display = 'none';
+                }
+            }
+        };
 
         const goToProject = (index) => {
             const dot = projDots[index];
             if (!dot) return;
 
             // Fade out
-            projBgImg.style.opacity = '0';
-            projTitle.style.opacity = '0';
-            projScale.style.opacity = '0';
-            projDesc.style.opacity = '0';
+            const fadeEls = [projBgImg, projTitle, projScale, projDesc];
+            if (projExtra) fadeEls.push(projExtra);
+            fadeEls.forEach(el => { if (el) el.style.opacity = '0'; });
 
             setTimeout(() => {
                 // Swap content
                 projBgImg.src = dot.dataset.img;
                 projBgImg.alt = dot.dataset.title;
                 projTitle.textContent = dot.dataset.title;
-                projScale.innerHTML = '<strong>Quy mô:</strong> ' + dot.dataset.scale;
-                projDesc.innerHTML = '<strong>Hạng mục PCCC:</strong> ' + dot.dataset.desc;
+
+                if (projScale) {
+                    const loc = dot.dataset.location || dot.dataset.scale || '';
+                    projScale.innerHTML = '<strong>Địa điểm:</strong> ' + loc;
+                }
+                if (projDesc) {
+                    const client = dot.dataset.client || dot.dataset.desc || '';
+                    projDesc.innerHTML = '<strong>Chủ đầu tư:</strong> ' + client;
+                }
+                if (projExtra) {
+                    const extra = dot.dataset.extra || '';
+                    if (extra) {
+                        // Format: "15 tầng | Nhà thầu độc lập | Năm 2024"
+                        const parts = extra.split('|').map(s => s.trim());
+                        projExtra.innerHTML = parts.join(' &nbsp;|&nbsp; ');
+                        projExtra.style.display = 'block';
+                    } else {
+                        projExtra.style.display = 'none';
+                    }
+                }
+
+                // Update link
+                updateInfoLink(dot);
 
                 // Update active dot
                 projDots.forEach(d => d.classList.remove('active'));
@@ -144,22 +180,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentProj = index;
 
                 // Fade in
-                projBgImg.style.opacity = '1';
-                projTitle.style.opacity = '1';
-                projScale.style.opacity = '1';
-                projDesc.style.opacity = '1';
+                fadeEls.forEach(el => { if (el) el.style.opacity = '1'; });
             }, 300);
         };
 
         // CSS transition for fade
-        [projBgImg, projTitle, projScale, projDesc].forEach(el => {
-            el.style.transition = 'opacity 0.3s ease';
+        [projBgImg, projTitle, projScale, projDesc, projExtra].forEach(el => {
+            if (el) el.style.transition = 'opacity 0.3s ease';
         });
 
-        // Dot click
+        // Initialise link state for first dot
+        updateInfoLink(projDots[0]);
+
+        // Stop dot clicks from triggering the info box link
         projDots.forEach((dot, i) => {
             dot.style.cursor = 'pointer';
-            dot.addEventListener('click', () => goToProject(i));
+            dot.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                goToProject(i);
+            });
         });
 
         // Swipe on the section

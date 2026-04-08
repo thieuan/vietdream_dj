@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Trang Chủ | Việt Dream - Công Ty PCCC Chuyên Nghiệp{% endblock %}
+{% block title %}Trang Chủ | VIETDREAM- Tư vấn, Thiết kế giải pháp PCCC Chuyên Nghiệp{% endblock %}
 
 {% block content %}
 <!-- Hero Horizontal Slider -->
@@ -163,43 +163,44 @@
 <!-- Dự Án Tiêu Biểu -->
 <section class="projects-featured fade-up" id="projectFeatured">
     <div class="projects-bg" id="projectBg">
-        <img src="{% static 'images/hero1.jpg' %}" alt="Dự án tiêu biểu" class="projects-bg-img" id="projectBgImg">
+        <img src="{% static 'images/project_muongthanh.jpg' %}" alt="Dự án tiêu biểu" class="projects-bg-img"
+            id="projectBgImg">
 
         <div class="container project-overlay-container">
             <div id="projectInfoLink" class="project-info-box">
                 <h3 id="projectTitle">KHÁCH SẠN MƯỜNG THANH XALA</h3>
                 <div class="project-details">
-                    <p id="projectScale"><strong>Địa điểm:</strong> Số 66 Phúc La, Phường Phúc La, Quận Hà Đông, TP. Hà Nội</p>
-                    <p id="projectDesc"><strong>Chủ đầu tư:</strong> Khách sạn Mường Thanh Xala – chi nhánh Công ty Cổ phần Tập đoàn Mường Thanh</p>
-                    <p id="projectExtra" style="margin-top:6px; font-size:14px;"><strong>Quy mô:</strong> 15 tầng nổi và 01 tầng hầm &nbsp;|&nbsp; <strong>Vai trò:</strong> Nhà thầu độc lập &nbsp;|&nbsp; <strong>Năm:</strong> 2024</p>
+                    <p id="projectScale"><strong>Địa điểm:</strong> Số 66 Phúc La, Phường Phúc La, Quận Hà Đông, TP. Hà
+                        Nội</p>
+                    <p id="projectDesc"><strong>Chủ đầu tư:</strong> Khách sạn Mường Thanh Xala – chi nhánh Công ty Cổ
+                        phần Tập đoàn Mường Thanh</p>
+                    <p id="projectExtra" style="margin-top:6px; font-size:14px;"><strong>Quy mô:</strong> 15 tầng nổi và
+                        01 tầng hầm &nbsp;|&nbsp; <strong>Vai trò:</strong> Nhà thầu độc lập &nbsp;|&nbsp;
+                        <strong>Năm:</strong> 2024
+                    </p>
                 </div>
                 <div class="project-dots">
-                    <span class="dot active" data-proj="0"
-                          data-img="{% static 'images/hero1.jpg' %}"
-                          data-title="KHÁCH SẠN MƯỜNG THANH XALA"
-                          data-location="Số 66 Phúc La, Phường Phúc La, Quận Hà Đông, TP. Hà Nội"
-                          data-client="Khách sạn Mường Thanh Xala – chi nhánh Công ty Cổ phần Tập đoàn Mường Thanh"
-                          data-extra="15 tầng nổi và 01 tầng hầm | Nhà thầu độc lập | Năm 2024"
-                          data-link="{% url 'project_detail' 'khach-san-muong-thanh-xala' %}">
+                    <span class="dot active" data-proj="0" data-img="{% static 'images/project_muongthanh.jpg' %}"
+                        data-title="KHÁCH SẠN MƯỜNG THANH XALA"
+                        data-location="Số 66 Phúc La, Phường Phúc La, Quận Hà Đông, TP. Hà Nội"
+                        data-client="Khách sạn Mường Thanh Xala – chi nhánh Công ty Cổ phần Tập đoàn Mường Thanh"
+                        data-extra="15 tầng nổi và 01 tầng hầm | Nhà thầu độc lập | Năm 2024"
+                        data-link="{% url 'project_detail' 'khach-san-muong-thanh-xala' %}">
                     </span>
-                    <span class="dot" data-proj="1"
-                          data-img="{% static 'images/hero2.jpg' %}"
-                          data-title="KHU CHUNG CƯ VINHOMES"
-                          data-location="Hà Nội"
-                          data-client="Vingroup"
-                          data-extra="4 tòa nhà, hơn 2.000 căn hộ"
-                          data-link="">
+                    <span class="dot" data-proj="1" data-img="{% static 'images/project_yenbinh.jpg' %}"
+                        data-title="KHU ĐÔ THỊ YÊN BÌNH"
+                        data-location="TT-03 thuộc KĐT Yên Bình, phường Vạn Xuân, Tỉnh Thái Nguyên"
+                        data-client="Công ty Cổ phần phát triển đô thị Yên Bình" data-extra="20 tầng nổi và 02 tầng hầm"
+                        data-link="">
                     </span>
-                    <span class="dot" data-proj="2"
-                          data-img="{% static 'images/hero3.jpg' %}"
-                          data-title="KHU ĐÔ THỊ ECOPARK"
-                          data-location="Văn Giang, Hưng Yên"
-                          data-client="Công ty CP Đầu tư và Phát triển Đô thị Việt Hưng"
-                          data-extra="Tổng diện tích 500ha, nhiều phân khu cao tầng"
-                          data-link="">
+                    <span class="dot" data-proj="2" data-img="{% static 'images/hero3.jpg' %}"
+                        data-title="KHU ĐÔ THỊ ECOPARK" data-location="Văn Giang, Hưng Yên"
+                        data-client="Công ty CP Đầu tư và Phát triển Đô thị Việt Hưng"
+                        data-extra="Tổng diện tích 500ha, nhiều phân khu cao tầng" data-link="">
                     </span>
                 </div>
-                <a id="projectViewMore" href="{% url 'project_detail' 'khach-san-muong-thanh-xala' %}" style="margin-top:14px; font-size:13px; font-weight:700; color:var(--primary); display:inline-flex; align-items:center; gap:6px; text-decoration:none;">
+                <a id="projectViewMore" href="{% url 'project_detail' 'khach-san-muong-thanh-xala' %}"
+                    style="margin-top:14px; font-size:13px; font-weight:700; color:var(--primary); display:inline-flex; align-items:center; gap:6px; text-decoration:none;">
                     Xem chi tiết dự án <i class="fa-solid fa-arrow-right" style="font-size:11px;"></i>
                 </a>
             </div>
@@ -236,7 +237,9 @@
                         alt="Ông Nguyễn Bá Diễn">
                 </div>
                 <div class="tes-text">
-                    <p id="tesQuote">"Nhiều chủ đầu tư quyết định lựa chọn Việt Dream thay thế cho các thương hiệu quốc tế nhờ chất lượng sánh ngang hàng ngoại nhập nhưng giá thành vẫn ở mức nội địa, phù hợp với đại đa số người tiêu dùng Việt Nam. Bên cạnh đó, chính sách chăm sóc tuyệt vời."</p>
+                    <p id="tesQuote">"Nhiều chủ đầu tư quyết định lựa chọn Việt Dream thay thế cho các thương hiệu quốc
+                        tế nhờ chất lượng sánh ngang hàng ngoại nhập nhưng giá thành vẫn ở mức nội địa, phù hợp với đại
+                        đa số người tiêu dùng Việt Nam. Bên cạnh đó, chính sách chăm sóc tuyệt vời."</p>
                     <div class="tes-author">
                         <h4 id="tesName">Ông Nguyễn Bá Diễn</h4>
                         <span id="tesRole">Giám đốc Công ty CP đầu tư và sản xuất Châu Á</span>
@@ -250,100 +253,111 @@
 
     <style>
         .tes-dot {
-            width: 8px; height: 8px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
             background: #444;
             cursor: pointer;
             transition: background 0.3s, transform 0.3s;
         }
-        .tes-dot.active { background: var(--primary); transform: scale(1.3); }
-        #tesContent { transition: opacity 0.3s ease; }
-        .tes-avatar img { transition: opacity 0.3s ease; }
+
+        .tes-dot.active {
+            background: var(--primary);
+            transform: scale(1.3);
+        }
+
+        #tesContent {
+            transition: opacity 0.3s ease;
+        }
+
+        .tes-avatar img {
+            transition: opacity 0.3s ease;
+        }
     </style>
 
     <script>
-    (function() {
-        const slides = [
-            {
-                img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80',
-                alt: 'Ông Nguyễn Bá Diễn',
-                quote: '"Nhiều chủ đầu tư quyết định lựa chọn Việt Dream thay thế cho các thương hiệu quốc tế nhờ chất lượng sánh ngang hàng ngoại nhập nhưng giá thành vẫn ở mức nội địa, phù hợp với đại đa số người tiêu dùng Việt Nam. Bên cạnh đó, chính sách chăm sóc tuyệt vời."',
-                name: 'Ông Nguyễn Bá Diễn',
-                role: 'Giám đốc Công ty CP đầu tư và sản xuất Châu Á'
-            },
-            {
-                img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80',
-                alt: 'Bà Trần Thị Hương',
-                quote: '"Đội ngũ kỹ thuật của Việt Dream làm việc rất chuyên nghiệp và tận tâm. Hệ thống PCCC được lắp đặt đúng tiến độ, đảm bảo kỹ thuật và được cơ quan chức năng nghiệm thu ngay lần đầu. Chúng tôi hoàn toàn hài lòng với chất lượng dịch vụ."',
-                name: 'Bà Trần Thị Hương',
-                role: 'Giám đốc Điều hành Khách sạn Mường Thanh Xala'
-            },
-            {
-                img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
-                alt: 'Ông Lê Minh Tuấn',
-                quote: '"Việt Dream tư vấn rất chi tiết và minh bạch từ khâu thiết kế đến thi công. Giá cả cạnh tranh, hồ sơ pháp lý đầy đủ, đặc biệt là hỗ trợ thẩm duyệt với cơ quan PCCC rất nhanh chóng. Sẽ tiếp tục hợp tác trong các dự án tới."',
-                name: 'Ông Lê Minh Tuấn',
-                role: 'Chủ đầu tư Khu Chung Cư Mini Cầu Giấy'
-            },
-            {
-                img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80',
-                alt: 'Bà Nguyễn Lan Anh',
-                quote: '"Tôi ấn tượng với sự chỉn chu và cẩn thận của Việt Dream trong từng hạng mục. Từ khi ký hợp đồng đến khi bàn giao, mọi thứ đều được thực hiện đúng cam kết. Đây là đơn vị PCCC đáng tin cậy mà tôi sẽ giới thiệu cho đối tác."',
-                name: 'Bà Nguyễn Lan Anh',
-                role: 'Quản lý Chuỗi Siêu thị Mini Hà Nội'
-            },
-            {
-                img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80',
-                alt: 'Ông Phạm Đức Thắng',
-                quote: '"Hệ thống báo cháy và chữa cháy tự động do Việt Dream lắp đặt tại nhà máy của chúng tôi hoạt động ổn định suốt 2 năm qua, chưa một lần sự cố. Đội ngũ bảo trì nhiệt tình, phản hồi nhanh. Rất tin tưởng vào năng lực của công ty."',
-                name: 'Ông Phạm Đức Thắng',
-                role: 'Giám đốc Sản xuất Nhà Máy May Hưng Yên'
+        (function () {
+            const slides = [
+                {
+                    img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80',
+                    alt: 'Ông Nguyễn Bá Diễn',
+                    quote: '"Nhiều chủ đầu tư quyết định lựa chọn Việt Dream thay thế cho các thương hiệu quốc tế nhờ chất lượng sánh ngang hàng ngoại nhập nhưng giá thành vẫn ở mức nội địa, phù hợp với đại đa số người tiêu dùng Việt Nam. Bên cạnh đó, chính sách chăm sóc tuyệt vời."',
+                    name: 'Ông Nguyễn Bá Diễn',
+                    role: 'Giám đốc Công ty CP đầu tư và sản xuất Châu Á'
+                },
+                {
+                    img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80',
+                    alt: 'Bà Trần Thị Hương',
+                    quote: '"Đội ngũ kỹ thuật của Việt Dream làm việc rất chuyên nghiệp và tận tâm. Hệ thống PCCC được lắp đặt đúng tiến độ, đảm bảo kỹ thuật và được cơ quan chức năng nghiệm thu ngay lần đầu. Chúng tôi hoàn toàn hài lòng với chất lượng dịch vụ."',
+                    name: 'Bà Trần Thị Hương',
+                    role: 'Giám đốc Điều hành Khách sạn Mường Thanh Xala'
+                },
+                {
+                    img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
+                    alt: 'Ông Lê Minh Tuấn',
+                    quote: '"Việt Dream tư vấn rất chi tiết và minh bạch từ khâu thiết kế đến thi công. Giá cả cạnh tranh, hồ sơ pháp lý đầy đủ, đặc biệt là hỗ trợ thẩm duyệt với cơ quan PCCC rất nhanh chóng. Sẽ tiếp tục hợp tác trong các dự án tới."',
+                    name: 'Ông Lê Minh Tuấn',
+                    role: 'Chủ đầu tư Khu Chung Cư Mini Cầu Giấy'
+                },
+                {
+                    img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80',
+                    alt: 'Bà Nguyễn Lan Anh',
+                    quote: '"Tôi ấn tượng với sự chỉn chu và cẩn thận của Việt Dream trong từng hạng mục. Từ khi ký hợp đồng đến khi bàn giao, mọi thứ đều được thực hiện đúng cam kết. Đây là đơn vị PCCC đáng tin cậy mà tôi sẽ giới thiệu cho đối tác."',
+                    name: 'Bà Nguyễn Lan Anh',
+                    role: 'Quản lý Chuỗi Siêu thị Mini Hà Nội'
+                },
+                {
+                    img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80',
+                    alt: 'Ông Phạm Đức Thắng',
+                    quote: '"Hệ thống báo cháy và chữa cháy tự động do Việt Dream lắp đặt tại nhà máy của chúng tôi hoạt động ổn định suốt 2 năm qua, chưa một lần sự cố. Đội ngũ bảo trì nhiệt tình, phản hồi nhanh. Rất tin tưởng vào năng lực của công ty."',
+                    name: 'Ông Phạm Đức Thắng',
+                    role: 'Giám đốc Sản xuất Nhà Máy May Hưng Yên'
+                }
+            ];
+
+            let current = 0;
+            const content = document.getElementById('tesContent');
+            const avatar = content.querySelector('.tes-avatar img');
+            const quote = document.getElementById('tesQuote');
+            const name = document.getElementById('tesName');
+            const role = document.getElementById('tesRole');
+            const dots = document.querySelectorAll('.tes-dot');
+
+            function goTo(index) {
+                current = (index + slides.length) % slides.length;
+                // Fade out
+                content.style.opacity = '0';
+                setTimeout(() => {
+                    const s = slides[current];
+                    avatar.src = s.img;
+                    avatar.alt = s.alt;
+                    quote.textContent = s.quote;
+                    name.textContent = s.name;
+                    role.textContent = s.role;
+                    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+                    content.style.opacity = '1';
+                }, 300);
             }
-        ];
 
-        let current = 0;
-        const content = document.getElementById('tesContent');
-        const avatar = content.querySelector('.tes-avatar img');
-        const quote = document.getElementById('tesQuote');
-        const name = document.getElementById('tesName');
-        const role = document.getElementById('tesRole');
-        const dots = document.querySelectorAll('.tes-dot');
+            document.getElementById('tesPrev').addEventListener('click', () => goTo(current - 1));
+            document.getElementById('tesNext').addEventListener('click', () => goTo(current + 1));
+            dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.i)));
 
-        function goTo(index) {
-            current = (index + slides.length) % slides.length;
-            // Fade out
-            content.style.opacity = '0';
-            setTimeout(() => {
-                const s = slides[current];
-                avatar.src = s.img;
-                avatar.alt = s.alt;
-                quote.textContent = s.quote;
-                name.textContent = s.name;
-                role.textContent = s.role;
-                dots.forEach((d, i) => d.classList.toggle('active', i === current));
-                content.style.opacity = '1';
-            }, 300);
-        }
+            // Touch swipe
+            const section = document.querySelector('.testimonials-section');
+            let tx = 0;
+            section.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+            section.addEventListener('touchend', e => {
+                const diff = tx - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+            }, { passive: true });
 
-        document.getElementById('tesPrev').addEventListener('click', () => goTo(current - 1));
-        document.getElementById('tesNext').addEventListener('click', () => goTo(current + 1));
-        dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.i)));
-
-        // Touch swipe
-        const section = document.querySelector('.testimonials-section');
-        let tx = 0;
-        section.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
-        section.addEventListener('touchend', e => {
-            const diff = tx - e.changedTouches[0].clientX;
-            if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
-        }, { passive: true });
-
-        // Auto-advance every 6s
-        let timer = setInterval(() => goTo(current + 1), 6000);
-        [document.getElementById('tesPrev'), document.getElementById('tesNext')].forEach(btn => {
-            btn.addEventListener('click', () => { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 6000); });
-        });
-    })();
+            // Auto-advance every 6s
+            let timer = setInterval(() => goTo(current + 1), 6000);
+            [document.getElementById('tesPrev'), document.getElementById('tesNext')].forEach(btn => {
+                btn.addEventListener('click', () => { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 6000); });
+            });
+        })();
     </script>
 </section>
 

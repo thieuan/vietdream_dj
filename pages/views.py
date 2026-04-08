@@ -61,6 +61,64 @@ PROJECTS = {
             {'src': 'images/muongthanh_pccc_2.png', 'alt': 'Phòng máy bơm chữa cháy'},
         ],
     },
+    'khu-do-thi-yen-binh': {
+        'slug': 'khu-do-thi-yen-binh',
+        'name': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình',
+        'category': 'Chung Cư',
+        'category_icon': 'fa-hotel',
+        'category_color': '#1a3a5c',
+        'short_desc': 'Tư vấn, thiết kế, thi công & nghiệm thu hệ thống PCCC và TAHK cho tòa nhà 20 tầng.',
+        'location': 'Ô đất ký hiệu TT-03 thuộc KĐT Yên Bình, phường Vạn Xuân, Tỉnh Thái Nguyên',
+        'client': 'Công ty Cổ phần phát triển đô thị Yên Bình',
+        'year': '2026',
+        'role': 'Nhà thầu độc lập',
+        'scale': '20 tầng nổi và 02 tầng hầm',
+        'scope': 'Tư vấn thiết kế hệ thống PCCC và TAHK, thẩm duyệt về PCCC. Cung cấp và lắp đặt hệ thống PCCC và TAHK; tổ chức nghiệm thu về PCCC',
+        'description': 'Dự án Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình, được thiết kế với quy mô 20 tầng và 02 tầng hầm. Dự án là tòa nhà chung cư tại KĐT Yên Bình, phường Vạn Xuân, Tỉnh Thái Nguyên',
+        'highlights': [
+            {
+                'title': 'Tiêu chuẩn cao cấp',
+                'icon': 'fa-star',
+                'content': 'Nằm trong chuỗi tòa nhà chung cư cao tầng thuộc dự án khu đô thị Yên Bình, dự án đòi hỏi sự khắt khe về tính an toàn tuyệt đối và sự phối hợp nhịp nhàng giữa hệ thống PCCC với không gian quần thể của khu đô thị.'
+            },
+            {
+                'title': 'Tiến độ thần tốc',
+                'icon': 'fa-clock',
+                'content': 'Với tư cách nhà thầu độc lập, chúng tôi đã tối ưu hóa quy trình từ khâu thiết kế đến nghiệm thu để đáp ứng tiến độ khẩn trương của dự án trong năm 2026.'
+            },
+        ],
+        'work_items': [
+            {
+                'title': 'Tư vấn và Pháp lý PCCC',
+                'icon': 'fa-file-contract',
+                'tasks': [
+                    'Tư vấn thiết kế hệ thống Phòng cháy chữa cháy (PCCC) và hệ thống Tạo áp cầu thang - Hút khói (TAHK).',
+                    'Thực hiện thủ tục, hồ sơ và đại diện Chủ đầu tư làm việc với cơ quan chức năng để Thẩm duyệt thiết kế về PCCC.',
+                ]
+            },
+            {
+                'title': 'Cung cấp và Thi công',
+                'icon': 'fa-wrench',
+                'tasks': [
+                    'Cung cấp vật tư, thiết bị đạt chuẩn cho hệ thống PCCC & TAHK.',
+                    'Trực tiếp lắp đặt, đấu nối và vận hành thử nghiệm hệ thống tại hiện trường, đảm bảo đúng tiêu chuẩn kỹ thuật và tính thẩm mỹ của khách sạn cao cấp.',
+                ]
+            },
+            {
+                'title': 'Nghiệm thu và Bàn giao',
+                'icon': 'fa-clipboard-check',
+                'tasks': [
+                    'Tổ chức thực hiện công tác Nghiệm thu về PCCC với Cục/Phòng Cảnh sát PCCC & CNCH.',
+                    'Hoàn thiện hồ sơ hoàn công và bàn giao hệ thống đi vào hoạt động chính thức.',
+                ]
+            },
+        ],
+        'images': [
+            {'src': 'images/project_yenbinh.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình'},
+            {'src': 'images/muongthanh_pccc_1.png', 'alt': 'Hệ thống PCCC bên trong khách sạn'},
+            {'src': 'images/muongthanh_pccc_2.png', 'alt': 'Phòng máy bơm chữa cháy'},
+        ],
+    },
 }
 
 def home(request):

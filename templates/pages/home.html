@@ -163,7 +163,7 @@
 <!-- Dự Án Tiêu Biểu -->
 <section class="projects-featured fade-up" id="projectFeatured">
     <div class="projects-bg" id="projectBg">
-        <img src="{% static 'images/project_muongthanh.jpg' %}" alt="Dự án tiêu biểu" class="projects-bg-img"
+        <img src="{% static 'images/muongthanh_exterior.png' %}" alt="Dự án tiêu biểu" class="projects-bg-img"
             id="projectBgImg">
 
         <div class="container project-overlay-container">
@@ -187,17 +187,31 @@
                         data-extra="15 tầng nổi và 01 tầng hầm | Nhà thầu độc lập | Năm 2024"
                         data-link="{% url 'project_detail' 'khach-san-muong-thanh-xala' %}">
                     </span>
-                    <span class="dot" data-proj="1" data-img="{% static 'images/project_yenbinh.jpg' %}"
+                    <span class="dot" data-proj="1" data-img="{% static 'images/hesco_1.png' %}"
+                        data-title="Chung cư cao tầng Hesco" data-location="Số 135, Trần Phú, Quận Hà Đông, TP. Hà Nội"
+                        data-client="Công ty thiết bị Thủy Lợi"
+                        data-extra="15 tầng nổi và 01 tầng hầm | Nhà thầu độc lập | Năm 2024"
+                        data-link="{% url 'project_detail' 'chung_cu_hesco' %}">
+                    </span>
+                    <span class="dot" data-proj="2" data-img="{% static 'images/project_yenbinh_1.jpg' %}"
                         data-title="Nhà ở cao tầng TT-01 KHU ĐÔ THỊ YÊN BÌNH"
                         data-location="Ô đất ký hiệu TT-01 thuộc KĐT Yên Bình, phường Vạn Xuân, Tỉnh Thái Nguyên"
                         data-client="Công ty Cổ phần phát triển đô thị Yên Bình"
-                        data-extra="20 tầng nổi và 02 tầng hầm | Nhà thầu độc lập | Năm 2025-2026" data-link="">
+                        data-extra="20 tầng nổi và 02 tầng hầm | Nhà thầu độc lập | Năm 2025-2026"
+                        data-link="{% url 'project_detail' 'khu-do-thi-yen-binh' %}">
                     </span>
-                    <span class="dot" data-proj="2" data-img="{% static 'images/project_yenbinh.jpg' %}"
+                    <span class="dot" data-proj="3" data-img="{% static 'images/project_yenbinh.jpg' %}"
                         data-title="Nhà ở cao tầng TT-03 KHU ĐÔ THỊ YÊN BÌNH"
                         data-location="Ô đất ký hiệu TT-03 thuộc KĐT Yên Bình, phường Vạn Xuân, Tỉnh Thái Nguyên"
                         data-client="Công ty Cổ phần phát triển đô thị Yên Bình"
-                        data-extra="20 tầng nổi và 02 tầng hầm | Nhà thầu độc lập | Năm 2026" data-link="">
+                        data-extra="20 tầng nổi và 02 tầng hầm | Nhà thầu độc lập | Năm 2026"
+                        data-link="{% url 'project_detail' 'khu-do-thi-yen-binh_1' %}">
+                    </span>
+                    <span class="dot" data-proj="4" data-img="{% static 'images/nhom_vietdung_1.jpg' %}"
+                        data-title="Nhà máy Công ty cổ phần nhôm Việt Dũng" data-location="KCN Quang Minh, TP Hà Nội"
+                        data-client="Công ty cổ phần nhôm Việt Dũng"
+                        data-extra="Nhà Xưởng | Nhà thầu độc lập | Năm 2026"
+                        data-link="{% url 'project_detail' 'nhom_viet_dung' %}">
                     </span>
                 </div>
                 <a id="projectViewMore" href="{% url 'project_detail' 'khach-san-muong-thanh-xala' %}"

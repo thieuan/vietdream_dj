@@ -177,6 +177,122 @@ PROJECTS = {
             {'src': 'images/muongthanh_pccc_2.png', 'alt': 'Phòng máy bơm chữa cháy'},
         ],
     },
+    'nhom_viet_dung': {
+        'slug': 'nhom_viet_dung',
+        'name': 'Nhà máy Công ty cổ phần nhôm Việt Dũng',
+        'category': 'Khu Công Nghiệp',
+        'category_icon': 'fa-hotel',
+        'category_color': '#1a3a5c',
+        'short_desc': 'Tư vấn, thiết kế, thi công & nghiệm thu hệ thống PCCC và TAHK cho nhà xưởng.',
+        'location': 'KCN Quang Minh, TP Hà Nội',
+        'client': 'Công ty cổ phần nhôm Việt Dũng',
+        'year': '2026',
+        'role': 'Nhà thầu độc lập',
+        'scale': 'Cụm nhà xưởng sản xuất nhôm',
+        'scope': 'Tư vấn thiết kế, thẩm duyệt PCCC; Cung cấp và lắp đặt hệ thống PCCC',
+        'description': 'Dự án nhà máy sản xuất nhôm của Công ty cổ phần nhôm Việt Dũng tại KCN Quang Minh, TP Hà Nội',
+        'highlights': [
+            {
+                'title': 'Tiêu chuẩn KCN',
+                'icon': 'fa-star',
+                'content': 'Nằm trong KCN Quang Minh, dự án đòi hỏi sự khắt khe về tính an toàn tuyệt đối và sự phối hợp nhịp nhàng giữa hệ thống PCCC với không gian quần thể của khu công nghiệp.'
+            },
+            {
+                'title': 'Tiến độ thần tốc',
+                'icon': 'fa-clock',
+                'content': 'Với tư cách nhà thầu độc lập, chúng tôi đã tối ưu hóa quy trình từ khâu thiết kế đến nghiệm thu để đáp ứng tiến độ khẩn trương của dự án trong năm 2026.'
+            },
+        ],
+        'work_items': [
+            {
+                'title': 'Tư vấn và Pháp lý PCCC',
+                'icon': 'fa-file-contract',
+                'tasks': [
+                    'Tư vấn thiết kế hệ thống Phòng cháy chữa cháy (PCCC) và hệ thống Tạo áp cầu thang - Hút khói (TAHK).',
+                    'Thực hiện thủ tục, hồ sơ và đại diện Chủ đầu tư làm việc với cơ quan chức năng để Thẩm duyệt thiết kế về PCCC.',
+                ]
+            },
+            {
+                'title': 'Cung cấp và Thi công',
+                'icon': 'fa-wrench',
+                'tasks': [
+                    'Cung cấp vật tư, thiết bị đạt chuẩn cho hệ thống PCCC & TAHK.',
+                    'Trực tiếp lắp đặt, đấu nối và vận hành thử nghiệm hệ thống tại hiện trường, đảm bảo đúng tiêu chuẩn kỹ thuật và tính thẩm mỹ của khách sạn cao cấp.',
+                ]
+            },
+            {
+                'title': 'Nghiệm thu và Bàn giao',
+                'icon': 'fa-clipboard-check',
+                'tasks': [
+                    'Tổ chức thực hiện công tác Nghiệm thu về PCCC với Cục/Phòng Cảnh sát PCCC & CNCH.',
+                    'Hoàn thiện hồ sơ hoàn công và bàn giao hệ thống đi vào hoạt động chính thức.',
+                ]
+            },
+        ],
+        'images': [
+            {'src': 'images/nhom_vietdung_1.jpg', 'alt': 'Nhà máy Công ty cổ phần nhôm Việt Dũng'},
+            {'src': 'images/nhom_vietdung_2.jpg', 'alt': 'Nhà máy Công ty cổ phần nhôm Việt Dũng' },
+        ],
+    },
+    'chung_cu_hesco': {
+        'slug': 'chung_cu_hesco',
+        'name': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco',
+        'category': 'Tòa nhà cao tầng',
+        'category_icon': 'fa-hotel',
+        'category_color': '#1a3a5c',
+        'short_desc': 'Tư vấn, thiết kế, thi công & nghiệm thu hệ thống PCCC và TAHK cho tòa nhà thương mại - văn phòng.',
+        'location': 'Số 135, Trần Phú, Quận Hà Đông, TP. Hà Nội',
+        'client': 'Công ty thiết bị Thủy Lợi',
+        'year': '2026',
+        'role': 'Nhà thầu độc lập',
+        'scale': 'Tòa nhà thương mại - Văn phòng',
+        'scope': 'Tư vấn thiết kế, thẩm duyệt PCCC; Cung cấp và lắp đặt hệ thống PCCC',
+        'description': 'Dự án Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco tại Số 135, Trần Phú, Quận Hà Đông, TP. Hà Nội',
+        'highlights': [
+            {
+                'title': 'Tiêu chuẩn Tòa nhà thương mại - Văn phòng',
+                'icon': 'fa-star',
+                'content': 'Dự án Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco tại Số 135, Trần Phú, Quận Hà Đông, TP. Hà Nội'
+            },
+            {
+                'title': 'Tiến độ thần tốc',
+                'icon': 'fa-clock',
+                'content': 'Với tư cách nhà thầu độc lập, chúng tôi đã tối ưu hóa quy trình từ khâu thiết kế đến nghiệm thu để đáp ứng tiến độ khẩn trương của dự án trong năm 2026.'
+            },
+        ],
+        'work_items': [
+            {
+                'title': 'Tư vấn và Pháp lý PCCC',
+                'icon': 'fa-file-contract',
+                'tasks': [
+                    'Tư vấn thiết kế hệ thống Phòng cháy chữa cháy (PCCC) và hệ thống Tạo áp cầu thang - Hút khói (TAHK).',
+                    'Thực hiện thủ tục, hồ sơ và đại diện Chủ đầu tư làm việc với cơ quan chức năng để Thẩm duyệt thiết kế về PCCC.',
+                ]
+            },
+            {
+                'title': 'Cung cấp và Thi công',
+                'icon': 'fa-wrench',
+                'tasks': [
+                    'Cung cấp vật tư, thiết bị đạt chuẩn cho hệ thống PCCC & TAHK.',
+                    'Trực tiếp lắp đặt, đấu nối và vận hành thử nghiệm hệ thống tại hiện trường, đảm bảo đúng tiêu chuẩn kỹ thuật và tính thẩm mỹ của khách sạn cao cấp.',
+                ]
+            },
+            {
+                'title': 'Nghiệm thu và Bàn giao',
+                'icon': 'fa-clipboard-check',
+                'tasks': [
+                    'Tổ chức thực hiện công tác Nghiệm thu về PCCC với Cục/Phòng Cảnh sát PCCC & CNCH.',
+                    'Hoàn thiện hồ sơ hoàn công và bàn giao hệ thống đi vào hoạt động chính thức.',
+                ]
+            },
+        ],
+        'images': [
+            {'src': 'images/hesco_1.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco'},
+            {'src': 'images/hesco_2.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco' },
+            {'src': 'images/hesco_1.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco'},
+            {'src': 'images/hesco_2.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco' },
+        ],
+    }
 }
 
 def home(request):

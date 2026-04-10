@@ -190,15 +190,20 @@
     .section-heading {
         font-size: 22px;
         color: var(--secondary);
-        margin-bottom: 18px;
+        margin-top: 40px;
+        margin-bottom: 20px;
         padding-bottom: 10px;
         border-left: 4px solid var(--primary);
         padding-left: 14px;
+    }
+    .detail-main > .fade-up:first-of-type .section-heading {
+        margin-top: 0;
     }
     .project-desc {
         font-size: 15px;
         color: #555;
         line-height: 1.8;
+        margin-bottom: 25px;
     }
 
     /* Work items */
@@ -381,7 +386,7 @@
                 </a>
 
                 <!-- Description -->
-                <div class="fade-up mb-5">
+                <div class="fade-up mb-5 pb-4">
                     <h2 class="section-heading">Mô Tả Dự Án</h2>
                     <p class="project-desc">{{ project.description }}</p>
                 </div>

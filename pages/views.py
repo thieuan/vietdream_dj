@@ -56,9 +56,12 @@ PROJECTS = {
             },
         ],
         'images': [
-            {'src': 'images/muongthanh_exterior.png', 'alt': 'Toàn cảnh Khách Sạn Mường Thanh Xala'},
-            {'src': 'images/muongthanh_pccc_1.png', 'alt': 'Hệ thống PCCC bên trong khách sạn'},
-            {'src': 'images/muongthanh_pccc_2.png', 'alt': 'Phòng máy bơm chữa cháy'},
+            {'src': 'images/muongthanh_1.jpg', 'alt': 'Khách Sạn Mường Thanh Xala'},
+            {'src': 'images/muongthanh_2.jpg', 'alt': 'Khách Sạn Mường Thanh Xala'},
+            {'src': 'images/muongthanh_3.jpg', 'alt': 'Khách Sạn Mường Thanh Xala'},
+            {'src': 'images/muongthanh_4.jpg', 'alt': 'Khách Sạn Mường Thanh Xala'},
+            {'src': 'images/muongthanh_5.jpg', 'alt': 'Khách Sạn Mường Thanh Xala'},
+            {'src': 'images/muongthanh_6.jpg', 'alt': 'Khách Sạn Mường Thanh Xala'},
         ],
     },
     'khu-do-thi-yen-binh': {
@@ -114,9 +117,10 @@ PROJECTS = {
             },
         ],
         'images': [
-            {'src': 'images/project_yenbinh.jpg', 'alt': 'Nhà ở cao tầng TT-01 thuộc dự án Khu đô thị Yên Bình'},
-            {'src': 'images/muongthanh_pccc_1.png', 'alt': 'Hệ thống PCCC bên trong tòa nhà'},
-            {'src': 'images/muongthanh_pccc_2.png', 'alt': 'Phòng máy bơm chữa cháy'},
+            {'src': 'images/project_yenbinh_11.jpg', 'alt': 'Nhà ở cao tầng TT-01 thuộc dự án Khu đô thị Yên Bình'},
+            {'src': 'images/project_yenbinh_12.jpg', 'alt': 'Nhà ở cao tầng TT-01 thuộc dự án Khu đô thị Yên Bình'},
+            {'src': 'images/project_yenbinh_13.jpg', 'alt': 'Nhà ở cao tầng TT-01 thuộc dự án Khu đô thị Yên Bình'},
+            {'src': 'images/project_yenbinh_14.jpg', 'alt': 'Nhà ở cao tầng TT-01 thuộc dự án Khu đô thị Yên Bình'},
         ],
     },
     'khu-do-thi-yen-binh_1': {
@@ -172,9 +176,10 @@ PROJECTS = {
             },
         ],
         'images': [
-            {'src': 'images/project_yenbinh.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình'},
-            {'src': 'images/muongthanh_pccc_1.png', 'alt': 'Hệ thống PCCC bên trong tòa nhà' },
-            {'src': 'images/muongthanh_pccc_2.png', 'alt': 'Phòng máy bơm chữa cháy'},
+            {'src': 'images/project_yenbinh_31.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình'},
+            {'src': 'images/project_yenbinh_32.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình' },
+            {'src': 'images/project_yenbinh_33.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình'},
+            {'src': 'images/project_yenbinh_34.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình'},
         ],
     },
     'nhom_viet_dung': {
@@ -232,6 +237,7 @@ PROJECTS = {
         'images': [
             {'src': 'images/nhom_vietdung_1.jpg', 'alt': 'Nhà máy Công ty cổ phần nhôm Việt Dũng'},
             {'src': 'images/nhom_vietdung_2.jpg', 'alt': 'Nhà máy Công ty cổ phần nhôm Việt Dũng' },
+            {'src': 'images/nhom_vietdung_3.jpg', 'alt': 'Nhà máy Công ty cổ phần nhôm Việt Dũng' },
         ],
     },
     'chung_cu_hesco': {
@@ -289,8 +295,9 @@ PROJECTS = {
         'images': [
             {'src': 'images/hesco_1.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco'},
             {'src': 'images/hesco_2.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco' },
-            {'src': 'images/hesco_1.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco'},
-            {'src': 'images/hesco_2.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco' },
+            {'src': 'images/hesco_3.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco'},
+            {'src': 'images/hesco_4.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco' },
+            {'src': 'images/hesco_5.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco'},
         ],
     }
 }

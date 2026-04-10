@@ -37,8 +37,7 @@
             
             <div class="contact-form fade-up" style="transition-delay: 0.2s;">
                 <h2 style="font-size: 28px; color: var(--secondary); margin-bottom: 30px;">Gửi <span style="color: var(--primary);">Yêu Cầu</span></h2>
-                <form action="#" method="POST">
-                    {% csrf_token %}
+                <form id="contactForm">
                     <div class="form-group">
                         <input type="text" class="form-control" name="name" placeholder="Họ và tên của bạn" required>
                     </div>
@@ -61,4 +60,32 @@
         </div>
     </div>
 </section>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const btn = this.querySelector('button');
+        const originalText = btn.innerText;
+
+        btn.innerText = 'ĐANG GỬI...';
+        btn.disabled = true;
+
+        const formData = new FormData(this);
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw70XcLAKL7iI_3V2GtJfN9IAjdyyqLANMqMG4nkSt_X20V-bZjYYCbod8fmaPsAR6unA/exec';
+
+        fetch(scriptURL, { method: 'POST', body: formData })
+            .then(response => {
+                alert('Cảm ơn bạn! Thông tin liên hệ của bạn đã được gửi thành công. Chúng tôi sẽ phản hồi sớm nhất.');
+                btn.innerText = originalText;
+                btn.disabled = false;
+                this.reset();
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                alert('Có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ hotline trực tiếp.');
+                btn.innerText = originalText;
+                btn.disabled = false;
+            });
+    });
+</script>
 {% endblock %}

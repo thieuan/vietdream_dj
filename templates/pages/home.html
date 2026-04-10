@@ -422,21 +422,50 @@
 
             <!-- Right Form -->
             <div class="consulting-form-box">
-                <form action="#" method="POST">
+                <form id="consultingForm">
                     <div class="form-row">
-                        <input type="text" placeholder="Họ và tên *" required class="flat-input">
-                        <input type="tel" placeholder="Số điện thoại *" required class="flat-input">
+                        <input type="text" name="name" placeholder="Họ và tên *" required class="flat-input">
+                        <input type="tel" name="phone" placeholder="Số điện thoại *" required class="flat-input">
                     </div>
                     <div class="form-row">
-                        <input type="email" placeholder="Email" class="flat-input">
-                        <input type="text" placeholder="Công ty" class="flat-input">
+                        <input type="email" name="email" placeholder="Email" class="flat-input">
+                        <input type="text" name="company" placeholder="Loại công trình" class="flat-input">
                     </div>
-                    <textarea placeholder="Nội dung cần tư vấn" rows="4" class="flat-input"></textarea>
+                    <textarea name="message" placeholder="Nội dung cần tư vấn" rows="4" class="flat-input"></textarea>
                     <button type="submit" class="btn-submit-form">GỬI YÊU CẦU</button>
                 </form>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    document.getElementById('consultingForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const btn = this.querySelector('button');
+        const originalText = btn.innerText;
+
+        btn.innerText = 'ĐANG GỬI...';
+        btn.disabled = true;
+
+        const formData = new FormData(this);
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw70XcLAKL7iI_3V2GtJfN9IAjdyyqLANMqMG4nkSt_X20V-bZjYYCbod8fmaPsAR6unA/exec';
+
+        // Use fetch with mode no-cors for GAS redirects
+        fetch(scriptURL, { method: 'POST', body: formData })
+            .then(response => {
+                alert('Cảm ơn bạn! Yêu cầu của bạn đã được gửi thành công. Chúng tôi sẽ liên hệ trong thời gian sớm nhất.');
+                btn.innerText = originalText;
+                btn.disabled = false;
+                this.reset();
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                alert('Có lỗi xảy ra trong quá trình gửi. Vui lòng thử lại hoặc gọi hotline.');
+                btn.innerText = originalText;
+                btn.disabled = false;
+            });
+    });
+</script>
 
 {% endblock %}

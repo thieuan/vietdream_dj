@@ -143,6 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Fade out
             const fadeEls = [projBgImg, projTitle, projScale, projDesc];
             if (projExtra) fadeEls.push(projExtra);
+            if (projViewMore) fadeEls.push(projViewMore);
             fadeEls.forEach(el => { if (el) el.style.opacity = '0'; });
 
             setTimeout(() => {

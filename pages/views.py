@@ -58,7 +58,6 @@ PROJECTS = {
         'images': [
             {'src': 'images/muongthanh_1.jpg', 'alt': 'Khách Sạn Mường Thanh Xala'},
             {'src': 'images/muongthanh_2.jpg', 'alt': 'Khách Sạn Mường Thanh Xala'},
-            {'src': 'images/muongthanh_3.jpg', 'alt': 'Khách Sạn Mường Thanh Xala'},
             {'src': 'images/muongthanh_4.jpg', 'alt': 'Khách Sạn Mường Thanh Xala'},
             {'src': 'images/muongthanh_6.jpg', 'alt': 'Khách Sạn Mường Thanh Xala'},
         ],

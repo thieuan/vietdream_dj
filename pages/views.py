@@ -116,10 +116,9 @@ PROJECTS = {
             },
         ],
         'images': [
-            {'src': 'images/project_yenbinh_11.jpg', 'alt': 'Nhà ở cao tầng TT-01 thuộc dự án Khu đô thị Yên Bình'},
-            {'src': 'images/project_yenbinh_12.jpg', 'alt': 'Nhà ở cao tầng TT-01 thuộc dự án Khu đô thị Yên Bình'},
-            {'src': 'images/project_yenbinh_13.jpg', 'alt': 'Nhà ở cao tầng TT-01 thuộc dự án Khu đô thị Yên Bình'},
-            {'src': 'images/project_yenbinh_14.jpg', 'alt': 'Nhà ở cao tầng TT-01 thuộc dự án Khu đô thị Yên Bình'},
+            {'src': 'images/cc_yenbinh_1.jpg', 'alt': 'Nhà ở cao tầng TT-01 thuộc dự án Khu đô thị Yên Bình'},
+            {'src': 'images/cc_yenbinh_2.jpg', 'alt': 'Nhà ở cao tầng TT-01 thuộc dự án Khu đô thị Yên Bình'},
+            {'src': 'images/cc_yenbinh_3.jpg', 'alt': 'Nhà ở cao tầng TT-01 thuộc dự án Khu đô thị Yên Bình'},
         ],
     },
     'khu-do-thi-yen-binh_1': {
@@ -175,10 +174,9 @@ PROJECTS = {
             },
         ],
         'images': [
-            {'src': 'images/project_yenbinh_31.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình'},
-            {'src': 'images/project_yenbinh_32.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình' },
-            {'src': 'images/project_yenbinh_33.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình'},
-            {'src': 'images/project_yenbinh_34.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình'},
+            {'src': 'images/cc_yenbinh_1.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình'},
+            {'src': 'images/cc_yenbinh_2.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình'},
+            {'src': 'images/cc_yenbinh_3.jpg', 'alt': 'Nhà ở cao tầng TT-03 thuộc dự án Khu đô thị Yên Bình'},
         ],
     },
     'nhom_viet_dung': {
@@ -267,27 +265,25 @@ PROJECTS = {
         ],
         'work_items': [
             {
-                'title': 'Tư vấn và Pháp lý PCCC',
+                'title': 'Tư vấn thiết kế hệ thống PCCC',
                 'icon': 'fa-file-contract',
                 'tasks': [
-                    'Tư vấn thiết kế hệ thống Phòng cháy chữa cháy (PCCC) và hệ thống Tạo áp cầu thang - Hút khói (TAHK).',
-                    'Thực hiện thủ tục, hồ sơ và đại diện Chủ đầu tư làm việc với cơ quan chức năng để Thẩm duyệt thiết kế về PCCC.',
+                    'Tư vấn thiết kế hệ thống Phòng cháy chữa cháy (PCCC).',
+                    'Tư vấn thiết kế hệ thống Tăng áp - Hút khói và cấp bù khí (TAHK).',
                 ]
             },
             {
-                'title': 'Cung cấp và Thi công',
+                'title': 'Tư vấn kiến trúc',
                 'icon': 'fa-wrench',
                 'tasks': [
-                    'Cung cấp vật tư, thiết bị đạt chuẩn cho hệ thống PCCC & TAHK.',
-                    'Trực tiếp lắp đặt, đấu nối và vận hành thử nghiệm hệ thống tại hiện trường, đảm bảo đúng tiêu chuẩn kỹ thuật và tính thẩm mỹ của khách sạn cao cấp.',
+                    'Tư vấn giải pháp về lối thoát nạn, khoang cháy, giao thông cho xe chữa cháy, ngăn chặn cháy lan...',
                 ]
             },
             {
-                'title': 'Nghiệm thu và Bàn giao',
+                'title': 'Thẩm định về phòng cháy chữa cháy',
                 'icon': 'fa-clipboard-check',
                 'tasks': [
-                    'Tổ chức thực hiện công tác Nghiệm thu về PCCC với Cục/Phòng Cảnh sát PCCC & CNCH.',
-                    'Hoàn thiện hồ sơ hoàn công và bàn giao hệ thống đi vào hoạt động chính thức.',
+                    'Làm việc với cơ quan chức năng để thẩm định thiết kế về PCCC.',
                 ]
             },
         ],
@@ -297,6 +293,120 @@ PROJECTS = {
             {'src': 'images/hesco_3.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco'},
             {'src': 'images/hesco_4.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco' },
             {'src': 'images/hesco_5.png', 'alt': 'Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco'},
+        ],
+    },
+    'oxh_01': {
+        'slug': 'oxh_01',
+        'name': 'Nhà ở xã hội cao tầng OXH-01 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)',
+        'category': 'Tòa nhà cao tầng',
+        'category_icon': 'fa-hotel',
+        'category_color': '#1a3a5c',
+        'short_desc': 'Tư vấn, thiết kế, thi công & nghiệm thu hệ thống PCCC cho tòa nhà chung cư.',
+        'location': 'Phường Nếnh, tỉnh Bắc Ninh',
+        'client': 'Công ty Cổ phần Đầu tư và phát triển đô thị HMS',
+        'year': '2025-2026',
+        'role': 'Nhà thầu độc lập',
+        'scale': 'Tòa nhà chung cư',
+        'scope': 'Tư Vấn Thiết Kế, Thẩm duyệt PCCC',
+        'description': 'Dự án Nhà ở xã hội cao tầng OXH-01 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)',
+        'highlights': [
+            {
+                'title': 'Tiêu chuẩn Tòa nhà thương mại - Văn phòng',
+                'icon': 'fa-star',
+                'content': 'Dự án Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco tại Số 135, Trần Phú, Quận Hà Đông, TP. Hà Nội'
+            },
+            {
+                'title': 'Tiến độ thần tốc',
+                'icon': 'fa-clock',
+                'content': 'Với tư cách nhà thầu độc lập, chúng tôi đã tối ưu hóa quy trình từ khâu thiết kế đến nghiệm thu để đáp ứng tiến độ khẩn trương của dự án trong năm 2026.'
+            },
+        ],
+        'work_items': [
+            {
+                'title': 'Tư vấn thiết kế hệ thống PCCC',
+                'icon': 'fa-file-contract',
+                'tasks': [
+                    'Tư vấn thiết kế hệ thống Phòng cháy chữa cháy (PCCC).',
+                    'Tư vấn thiết kế hệ thống Tăng áp - Hút khói và cấp bù khí (TAHK).',
+                ]
+            },
+            {
+                'title': 'Tư vấn kiến trúc',
+                'icon': 'fa-wrench',
+                'tasks': [
+                    'Tư vấn giải pháp về lối thoát nạn, khoang cháy, giao thông cho xe chữa cháy, ngăn chặn cháy lan...',
+                ]
+            },
+            {
+                'title': 'Thẩm định về phòng cháy chữa cháy',
+                'icon': 'fa-clipboard-check',
+                'tasks': [
+                    'Làm việc với cơ quan chức năng để thẩm định thiết kế về PCCC.',
+                ]
+            },
+        ],
+        'images': [
+            {'src': 'images/project_oxh_011.jpg', 'alt': 'Nhà ở xã hội cao tầng OXH-01 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)'},
+            {'src': 'images/project_oxh_012.jpg', 'alt': 'Nhà ở xã hội cao tầng OXH-01 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)' },
+            {'src': 'images/project_oxh_013.jpg', 'alt': 'Nhà ở xã hội cao tầng OXH-01 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)'},
+        ],
+    },
+     'oxh_04': {
+        'slug': 'oxh_04',
+        'name': 'Nhà ở xã hội cao tầng OXH-04 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)',
+        'category': 'Tòa nhà cao tầng',
+        'category_icon': 'fa-hotel',
+        'category_color': '#1a3a5c',
+        'short_desc': 'Tư vấn, thiết kế, thi công & nghiệm thu hệ thống PCCC cho tòa nhà chung cư.',
+        'location': 'Phường Nếnh, tỉnh Bắc Ninh',
+        'client': 'Công ty Cổ phần Đầu tư và phát triển đô thị HMS',
+        'year': '2025-2026',
+        'role': 'Nhà thầu độc lập',
+        'scale': 'Tòa nhà chung cư',
+        'scope': 'Tư Vấn Thiết Kế, Thẩm duyệt PCCC',
+        'description': 'Dự án Nhà ở xã hội cao tầng OXH-04 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)',
+        'highlights': [
+            {
+                'title': 'Tiêu chuẩn Tòa nhà thương mại - Văn phòng',
+                'icon': 'fa-star',
+                'content': 'Dự án Tòa nhà thương mại - Văn phòng thuộc dự án Trung tâm thương mại - văn phòng chung cư cao tầng Hesco tại Số 135, Trần Phú, Quận Hà Đông, TP. Hà Nội'
+            },
+            {
+                'title': 'Tiến độ thần tốc',
+                'icon': 'fa-clock',
+                'content': 'Với tư cách nhà thầu độc lập, chúng tôi đã tối ưu hóa quy trình từ khâu thiết kế đến nghiệm thu để đáp ứng tiến độ khẩn trương của dự án trong năm 2026.'
+            },
+        ],
+        'work_items': [
+            {
+                'title': 'Tư vấn thiết kế hệ thống PCCC',
+                'icon': 'fa-file-contract',
+                'tasks': [
+                    'Tư vấn thiết kế hệ thống Phòng cháy chữa cháy (PCCC).',
+                    'Tư vấn thiết kế hệ thống Tăng áp - Hút khói và cấp bù khí (TAHK).',
+                ]
+            },
+            {
+                'title': 'Tư vấn kiến trúc',
+                'icon': 'fa-wrench',
+                'tasks': [
+                    'Tư vấn giải pháp về lối thoát nạn, khoang cháy, giao thông cho xe chữa cháy, ngăn chặn cháy lan...',
+                ]
+            },
+            {
+                'title': 'Thẩm định về phòng cháy chữa cháy',
+                'icon': 'fa-clipboard-check',
+                'tasks': [
+                    'Làm việc với cơ quan chức năng để thẩm định thiết kế về PCCC.',
+                ]
+            },
+        ],
+        'images': [
+            {'src': 'images/project_oxh_041.jpg', 'alt': 'Nhà ở xã hội cao tầng OXH-04 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)'},
+            {'src': 'images/project_oxh_042.jpg', 'alt': 'Nhà ở xã hội cao tầng OXH-04 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)' },
+            {'src': 'images/project_oxh_043.jpg', 'alt': 'Nhà ở xã hội cao tầng OXH-04 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)'},
+            {'src': 'images/project_oxh_044.jpg', 'alt': 'Nhà ở xã hội cao tầng OXH-04 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)'},
+            {'src': 'images/project_oxh_045.jpg', 'alt': 'Nhà ở xã hội cao tầng OXH-04 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)'},
         ],
     }
 }

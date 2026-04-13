@@ -407,6 +407,62 @@ PROJECTS = {
             {'src': 'images/project_oxh_044.jpg', 'alt': 'Nhà ở xã hội cao tầng OXH-04 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)'},
             {'src': 'images/project_oxh_045.jpg', 'alt': 'Nhà ở xã hội cao tầng OXH-04 thuộc KĐT và NOXH Vân Trung, Huyện Việt Yên (Nay là phường Nếnh, tỉnh Bắc Ninh)'},
         ],
+    },
+     'hanam_palace': {
+        'slug': 'hanam_palace',
+        'name': 'Khách sạn Hà Nam Palace, Phủ Lý, Hà Nam',
+        'category': 'Khách sạn',
+        'category_icon': 'fa-hotel',
+        'category_color': '#1a3a5c',
+        'short_desc': 'Tư vấn, thiết kế, thi công & nghiệm thu hệ thống PCCC cho khách sạn.',
+        'location': 'Phủ Lý, tỉnh Hà Nam',
+        'client': 'Hà nam Palace',
+        'year': '2025-2026',
+        'role': 'Nhà thầu độc lập',
+        'scale': 'Tòa nhà khách sạn',
+        'scope': 'Tư Vấn Thiết Kế, Thẩm duyệt PCCC',
+        'description': 'Dự án Khách sạn Hà Nam Palace, Phủ Lý, Hà Nam',
+        'highlights': [
+            {
+                'title': 'Tiêu chuẩn khách sạn cao cấp',
+                'icon': 'fa-star',
+                'content': 'Dự án Khách sạn Hà Nam Palace, Phủ Lý, Hà Nam'
+            },
+            {
+                'title': 'Tiến độ thần tốc',
+                'icon': 'fa-clock',
+                'content': 'Với tư cách nhà thầu độc lập, chúng tôi đã tối ưu hóa quy trình từ khâu thiết kế đến nghiệm thu để đáp ứng tiến độ khẩn trương của dự án trong năm 2026.'
+            },
+        ],
+        'work_items': [
+            {
+                'title': 'Tư vấn thiết kế hệ thống PCCC',
+                'icon': 'fa-file-contract',
+                'tasks': [
+                    'Tư vấn thiết kế hệ thống Phòng cháy chữa cháy (PCCC).',
+                    'Tư vấn thiết kế hệ thống Tăng áp - Hút khói và cấp bù khí (TAHK).',
+                ]
+            },
+            {
+                'title': 'Tư vấn kiến trúc',
+                'icon': 'fa-wrench',
+                'tasks': [
+                    'Tư vấn giải pháp về lối thoát nạn, khoang cháy, giao thông cho xe chữa cháy, ngăn chặn cháy lan...',
+                ]
+            },
+            {
+                'title': 'Thẩm định về phòng cháy chữa cháy',
+                'icon': 'fa-clipboard-check',
+                'tasks': [
+                    'Làm việc với cơ quan chức năng để thẩm định thiết kế về PCCC.',
+                ]
+            },
+        ],
+        'images': [
+            {'src': 'images/hanam_palace_1.png', 'alt': 'Khách sạn Hà Nam Palace, Phủ Lý, Hà Nam'},
+            {'src': 'images/hanam_palace_2.png', 'alt': 'Khách sạn Hà Nam Palace, Phủ Lý, Hà Nam' },
+            {'src': 'images/hanam_palace_3.png', 'alt': 'Khách sạn Hà Nam Palace, Phủ Lý, Hà Nam'},
+        ],
     }
 }
 

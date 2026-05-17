@@ -463,6 +463,65 @@ PROJECTS = {
             {'src': 'images/hanam_palace_2.png', 'alt': 'Khách sạn Hà Nam Palace, Phủ Lý, Hà Nam' },
             {'src': 'images/hanam_palace_3.png', 'alt': 'Khách sạn Hà Nam Palace, Phủ Lý, Hà Nam'},
         ],
+    },
+    'aeon_mall_hadong': {
+        'slug': 'aeon_mall_hadong',
+        'name': 'TTTM AEON MALL HÀ ĐÔNG',
+        'category': 'Trung Tâm Thương Mại',
+        'category_icon': 'fa-store',
+        'category_color': '#1a3a5c',
+        'short_desc': 'Thi công cải tạo hệ thống PCCC các gian hàng.',
+        'location': 'Phường Dương Nội, Quận Hà Đông, Hà Nội',
+        'client': 'AEON MALL Việt Nam',
+        'year': '2024-2025',
+        'role': 'Nhà thầu thi công',
+        'scale': 'Trung tâm thương mại',
+        'scope': 'Thi công cải tạo hệ thống PCCC các gian hàng',
+        'description': 'Dự án thi công cải tạo hệ thống PCCC các gian hàng tại Trung tâm thương mại AEON MALL Hà Đông, đảm bảo an toàn PCCC cho toàn bộ quá trình vận hành và kinh doanh của các đối tác thuê mặt bằng.',
+        'highlights': [
+            {
+                'title': 'Tiêu chuẩn khắt khe',
+                'icon': 'fa-star',
+                'content': 'Đáp ứng các tiêu chuẩn PCCC khắt khe của tập đoàn AEON và quy định hiện hành của Việt Nam, đảm bảo an toàn tuyệt đối cho khách hàng và gian hàng.'
+            },
+            {
+                'title': 'Thi công không gián đoạn',
+                'icon': 'fa-clock',
+                'content': 'Quá trình thi công được tổ chức chuyên nghiệp, thi công ban đêm để không ảnh hưởng đến hoạt động kinh doanh ban ngày của trung tâm thương mại.'
+            },
+        ],
+        'work_items': [
+            {
+                'title': 'Khảo sát và Lập phương án',
+                'icon': 'fa-file-contract',
+                'tasks': [
+                    'Khảo sát hiện trạng hệ thống PCCC của gian hàng và hệ thống trục chính của TTTM.',
+                    'Lập phương án thi công cải tạo đảm bảo kết nối đồng bộ và an toàn.',
+                ]
+            },
+            {
+                'title': 'Thi công cải tạo PCCC',
+                'icon': 'fa-wrench',
+                'tasks': [
+                    'Dịch chuyển, bổ sung đầu phun Sprinkler, báo cháy tự động theo thiết kế gian hàng.',
+                    'Cải tạo hệ thống hút khói, cấp gió tươi đồng bộ với hệ thống chung của TTTM.',
+                ]
+            },
+            {
+                'title': 'Nghiệm thu đưa vào sử dụng',
+                'icon': 'fa-clipboard-check',
+                'tasks': [
+                    'Nghiệm thu với Ban quản lý TTTM AEON MALL.',
+                    'Bàn giao hệ thống cho chủ gian hàng đưa vào hoạt động kinh doanh.',
+                ]
+            },
+        ],
+        'images': [
+            {'src': 'images/aeon_hadong_1.png', 'alt': 'TTTM AEON MALL HÀ ĐÔNG'},
+            {'src': 'images/aeon_hadong_2.jpg', 'alt': 'Thi công cải tạo hệ thống PCCC các gian hàng' },
+            {'src': 'images/aeon_hadong_3.jpg', 'alt': 'Thi công cải tạo hệ thống PCCC các gian hàng'},
+            {'src': 'images/aeon_hadong_4.jpg', 'alt': 'Thi công cải tạo hệ thống PCCC các gian hàng'},
+        ],
     }
 }
 
